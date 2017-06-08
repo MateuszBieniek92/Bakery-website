@@ -12,4 +12,3 @@ In progress... :)
 ## Demo image:
 
 ![Screenshot](bakery_website.png)
-
