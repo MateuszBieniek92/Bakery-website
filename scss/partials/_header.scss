@@ -1,0 +1,59 @@
+header {
+    position: absolute;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    width: 100vw;
+}
+
+.logo {
+    float: left;
+    display: inline-block;
+    letter-spacing: 3px;
+    position: absolute;
+    margin-top: -0.35em;
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 30px;
+    color: white;
+}
+
+.menu {
+    margin-top: 1em;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    li {
+        font-family: 'Alegreya', 'sans serif';
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        span {
+            padding: 0 30px;
+        }
+    }
+    li:hover {
+        color: rgba(0, 0, 0, 0.5);
+        span {
+            color: white;
+        }
+    }
+}
+
+.socialMedia {
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+    margin-top: -1.5em;
+    li {
+        display: inline-block;
+        padding: 0 3px;
+        cursor: pointer;
+    }
+    a:hover {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    a:visited {
+        color: white;
+    }
+}
