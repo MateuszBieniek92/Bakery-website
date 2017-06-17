@@ -1,6 +1,6 @@
 /* line 1, scss/main.css */
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-family: 'Alegreya', serif;
   font-family: 'Dancing Script', cursive;
   font-family: 'Playfair Display', serif;
@@ -105,7 +105,7 @@ header {
 .menu li {
   font-family: 'Alegreya', 'sans serif';
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer; }
 
 /* line 89, scss/main.css */
@@ -153,3 +153,73 @@ header {
 /* line 118, scss/main.css */
 .mainHeader {
   margin-top: 50px; }
+
+/* line 121, scss/main.css */
+.bgShadow {
+  display: inline-block;
+  margin: 15vh 22vw;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  background: #564f4c;
+  filter: blur(125px);
+  opacity: 0.9;
+  position: relative; }
+
+/* line 132, scss/main.css */
+.mainHeader {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  top: calc(50% - 250px);
+  left: calc(50% - 300px);
+  font-size: 6em;
+  font-family: "PlayfairDisplay", 'sans-serif';
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004); }
+
+/* line 145, scss/main.css */
+.stripes {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/nav and header/lines.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  top: calc(50% - 57px);
+  left: calc(50% - 100px); }
+
+/* line 157, scss/main.css */
+.bottomText {
+  font-weight: 300;
+  font-size: 24px;
+  font-family: "Raleway", 'sans-serif';
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004);
+  position: absolute;
+  left: calc(50% - 275px);
+  top: calc(50% - 0px);
+  width: 544px; }
+
+/* line 170, scss/main.css */
+.menuBtn {
+  border-width: 1px;
+  border-color: #9e9c93;
+  border-style: dashed;
+  background-color: rgba(86, 83, 76, 0.529);
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(50% + 165px);
+  width: 198px;
+  height: 48px;
+  font-size: 14px;
+  font-family: "Alegreya",'sans-serif';
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px; }
