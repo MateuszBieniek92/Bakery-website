@@ -8,14 +8,41 @@
 
 .bgShadow {
     display: inline-block;
-    margin: 15vh 22vw;
+    margin: 22vh 30vw;
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 155px;
+    height: 410px;
     background: #564f4c;
     filter: blur(125px);
     opacity: 0.9;
     position: relative;
+    @media (min-width: 450px) {
+        margin: 23vh 22vw;
+        width: 270px;
+        height: 375px;
+    }
+    @media (min-width: 600px) {
+        margin: 23vh 28vw;
+    }
+    @media (min-width: 800px) {
+        margin: 15vh 22vw;
+        width: 450px;
+        height: 500px;
+    }
+    @media (min-width: 1000px) {
+        margin: 15vh 28vw;
+        width: 425px;
+    }
+    @media (min-width: 1100px) {
+        margin: 15vh 28vw;
+        width: 450px;
+    }
+        @media (min-width: 1300px) {
+        margin: 15vh 24vw;
+    }
+            @media (min-width: 1300px) {
+        margin: 15vh 20vw;
+    }
 }
 
 .mainHeader {
@@ -84,10 +111,6 @@
         width: 450px;
     }
     @media (min-width: 600px) {
-        left: calc(50% - 275px);
-        width: 544px;
-    }
-    @media (min-width: 800px) {
         left: calc(50% - 275px);
         width: 544px;
     }

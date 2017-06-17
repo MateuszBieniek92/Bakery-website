@@ -89,38 +89,95 @@ header {
   display: inline-block;
   letter-spacing: 3px;
   position: absolute;
-  margin-top: -0.35em;
+  margin-top: 0.2em;
   font-family: 'Dancing Script', 'cursive';
   font-size: 30px;
   color: white; }
 
-/* line 79, scss/main.css */
+@media (min-width: 750px) {
+  /* line 79, scss/main.css */
+  .logo {
+    margin-top: -0.35em; } }
+
+/* line 82, scss/main.css */
 .menu {
+  display: none;
   margin-top: 1em;
   list-style-type: none;
   color: white;
   text-align: center; }
 
-/* line 84, scss/main.css */
+@media (min-width: 750px) {
+  /* line 89, scss/main.css */
+  .menu {
+    display: block; } }
+
+/* line 91, scss/main.css */
 .menu li {
   font-family: 'Alegreya', 'sans serif';
   display: inline-block;
   font-size: 14px;
   cursor: pointer; }
 
-/* line 89, scss/main.css */
+/* line 96, scss/main.css */
 .menu li span {
   padding: 0 30px; }
 
-/* line 91, scss/main.css */
+@media (min-width: 750px) {
+  /* line 99, scss/main.css */
+  .menu li {
+    font-size: 11px; } }
+
+@media (min-width: 900px) {
+  /* line 102, scss/main.css */
+  .menu li {
+    font-size: 14px; } }
+
+/* line 104, scss/main.css */
 .menu li:hover {
   color: rgba(0, 0, 0, 0.5); }
 
-/* line 93, scss/main.css */
+/* line 106, scss/main.css */
 .menu li:hover span {
   color: white; }
 
-/* line 96, scss/main.css */
+/* line 109, scss/main.css */
+.hamburger {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  color: white; }
+
+@media (min-width: 750px) {
+  /* line 117, scss/main.css */
+  .hamburger {
+    display: none; } }
+
+/* line 120, scss/main.css */
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s; }
+
+/* line 129, scss/main.css */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+/* line 132, scss/main.css */
+.change .bar2 {
+  opacity: 0; }
+
+/* line 135, scss/main.css */
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+/* line 138, scss/main.css */
 .socialMedia {
   color: white;
   display: inline-block;
@@ -128,21 +185,21 @@ header {
   float: right;
   margin-top: -1.5em; }
 
-/* line 102, scss/main.css */
+/* line 144, scss/main.css */
 .socialMedia li {
   display: inline-block;
   padding: 0 3px;
   cursor: pointer; }
 
-/* line 106, scss/main.css */
+/* line 148, scss/main.css */
 .socialMedia a:hover {
   color: rgba(0, 0, 0, 0.5); }
 
-/* line 108, scss/main.css */
+/* line 150, scss/main.css */
 .socialMedia a:visited {
   color: white; }
 
-/* line 111, scss/main.css */
+/* line 153, scss/main.css */
 .sectionOne {
   background-image: url("../images/nav and header/main-section-img.png");
   background-repeat: no-repeat;
@@ -150,19 +207,60 @@ header {
   width: 100vw;
   height: 100vh; }
 
-/* line 118, scss/main.css */
+/* line 160, scss/main.css */
 .bgShadow {
   display: inline-block;
-  margin: 15vh 22vw;
+  margin: 22vh 30vw;
   border-radius: 50%;
-  width: 500px;
-  height: 500px;
+  width: 155px;
+  height: 410px;
   background: #564f4c;
   filter: blur(125px);
   opacity: 0.9;
   position: relative; }
 
-/* line 129, scss/main.css */
+@media (min-width: 450px) {
+  /* line 171, scss/main.css */
+  .bgShadow {
+    margin: 23vh 22vw;
+    width: 270px;
+    height: 375px; } }
+
+@media (min-width: 600px) {
+  /* line 176, scss/main.css */
+  .bgShadow {
+    margin: 23vh 28vw; } }
+
+@media (min-width: 800px) {
+  /* line 179, scss/main.css */
+  .bgShadow {
+    margin: 15vh 22vw;
+    width: 450px;
+    height: 500px; } }
+
+@media (min-width: 1000px) {
+  /* line 184, scss/main.css */
+  .bgShadow {
+    margin: 15vh 28vw;
+    width: 425px; } }
+
+@media (min-width: 1100px) {
+  /* line 188, scss/main.css */
+  .bgShadow {
+    margin: 15vh 28vw;
+    width: 450px; } }
+
+@media (min-width: 1300px) {
+  /* line 192, scss/main.css */
+  .bgShadow {
+    margin: 15vh 24vw; } }
+
+@media (min-width: 1300px) {
+  /* line 195, scss/main.css */
+  .bgShadow {
+    margin: 15vh 20vw; } }
+
+/* line 198, scss/main.css */
 .mainHeader {
   margin-top: 50px;
   color: white;
@@ -178,27 +276,27 @@ header {
   text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004); }
 
 @media (min-width: 450px) {
-  /* line 143, scss/main.css */
+  /* line 212, scss/main.css */
   .mainHeader {
     top: calc(50% - 250px);
     left: calc(50% - 175px);
     font-size: 3em; } }
 
 @media (min-width: 600px) {
-  /* line 148, scss/main.css */
+  /* line 217, scss/main.css */
   .mainHeader {
     top: calc(50% - 250px);
     left: calc(50% - 225px);
     font-size: 4em; } }
 
 @media (min-width: 800px) {
-  /* line 153, scss/main.css */
+  /* line 222, scss/main.css */
   .mainHeader {
     top: calc(50% - 250px);
     left: calc(50% - 300px);
     font-size: 6em; } }
 
-/* line 158, scss/main.css */
+/* line 227, scss/main.css */
 .stripes {
   height: 102px;
   width: 150px;
@@ -212,13 +310,13 @@ header {
   left: calc(50% - 75px); }
 
 @media (min-width: 450px) {
-  /* line 170, scss/main.css */
+  /* line 239, scss/main.css */
   .stripes {
     height: 200px;
     width: 200px;
     left: calc(50% - 100px); } }
 
-/* line 175, scss/main.css */
+/* line 244, scss/main.css */
 .bottomText {
   font-weight: 300;
   font-size: 20px;
@@ -233,25 +331,19 @@ header {
   width: 325px; }
 
 @media (min-width: 450px) {
-  /* line 188, scss/main.css */
+  /* line 257, scss/main.css */
   .bottomText {
     font-size: 24px;
     left: calc(50% - 235px);
     width: 450px; } }
 
 @media (min-width: 600px) {
-  /* line 193, scss/main.css */
+  /* line 262, scss/main.css */
   .bottomText {
     left: calc(50% - 275px);
     width: 544px; } }
 
-@media (min-width: 800px) {
-  /* line 197, scss/main.css */
-  .bottomText {
-    left: calc(50% - 275px);
-    width: 544px; } }
-
-/* line 201, scss/main.css */
+/* line 266, scss/main.css */
 .menuBtn {
   border: 1px dashed #9e9c93;
   background-color: rgba(86, 83, 76, 0.529);

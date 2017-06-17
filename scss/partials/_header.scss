@@ -11,17 +11,24 @@ header {
     display: inline-block;
     letter-spacing: 3px;
     position: absolute;
-    margin-top: -0.35em;
+    margin-top: 0.2em;
     font-family: 'Dancing Script', 'cursive';
     font-size: 30px;
     color: white;
+    @media (min-width: 750px) {
+        margin-top: -0.35em;
+    }
 }
 
 .menu {
+    display: none;
     margin-top: 1em;
     list-style-type: none;
     color: white;
     text-align: center;
+    @media (min-width: 750px) {
+        display: block;
+    }
     li {
         font-family: 'Alegreya', 'sans serif';
         display: inline-block;
@@ -30,6 +37,12 @@ header {
         span {
             padding: 0 30px;
         }
+        @media (min-width: 750px) {
+            font-size: 11px;
+        }
+        @media (min-width: 900px) {
+            font-size: 14px;
+        }
     }
     li:hover {
         color: rgba(0, 0, 0, 0.5);
@@ -37,6 +50,40 @@ header {
             color: white;
         }
     }
+}
+
+.hamburger {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    color: white;
+    @media (min-width: 750px) {
+        display: none;
+    }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .socialMedia {
