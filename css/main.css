@@ -375,15 +375,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vw;
   position: relative;
   top: -115px; }
 
-/* line 299, scss/main.css */
+/* line 298, scss/main.css */
 .pos {
   padding-top: 100px; }
 
-/* line 302, scss/main.css */
+/* line 301, scss/main.css */
 .headerText {
   line-height: 0.625;
   font-size: 48px;
@@ -392,7 +391,7 @@ header {
   font-weight: 700;
   text-align: center; }
 
-/* line 310, scss/main.css */
+/* line 309, scss/main.css */
 .headerDescription {
   font-family: "Alegreya", 'sans-serif';
   color: #a47d5e;
@@ -401,12 +400,135 @@ header {
   padding-top: 15px;
   font-size: 16px; }
 
-/* line 318, scss/main.css */
+/* line 317, scss/main.css */
 .description {
   font-size: 14px;
-  font-family: 'Raleway','sans-serif';
+  font-family: 'Raleway', 'sans-serif';
   color: #56534c;
   line-height: 1.714;
   text-align: center;
   padding: 30px;
   font-weight: 600; }
+
+/* line 326, scss/main.css */
+.chefCook {
+  font-size: 24px;
+  font-family: "Alegreya", 'sans-serif';
+  color: #56534c;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center; }
+
+/* line 334, scss/main.css */
+.chefUl {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: calc(50% - 215px); }
+
+/* line 339, scss/main.css */
+.chefUl li {
+  padding: 40px 15px; }
+
+/* line 341, scss/main.css */
+.chefUl li .chefName,
+.chefUl li .chefSurname {
+  border-top: 1px solid #d7d5ca;
+  border-bottom: 1px solid #d7d5ca;
+  padding: 15px 20px;
+  margin-top: 30px;
+  font-size: 24px;
+  font-family: "Alegreya";
+  color: #56534c;
+  line-height: 1.25;
+  text-align: center; }
+
+/* line 352, scss/main.css */
+.chefUl li .chefPhoto {
+  background-image: url("../images/section two/avatar_section_one.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 125px;
+  height: 125px;
+  border: 5px solid white;
+  border-radius: 50%; }
+
+/* line 361, scss/main.css */
+.leftMark {
+  margin-left: 75px; }
+
+/* line 364, scss/main.css */
+.rightMark {
+  float: right;
+  margin: 15px 75px 0 0; }
+
+/* line 368, scss/main.css */
+.leftMark,
+.rightMark {
+  font-size: 24px;
+  font-family: 'Playfair Display';
+  color: #b6b5b2;
+  line-height: 0.5; }
+
+/* line 375, scss/main.css */
+.cursiveText {
+  font-size: 24px;
+  font-family: 'Dancing Script', 'cursive';
+  color: #a47d5e;
+  line-height: 1.25;
+  text-align: center; }
+
+/* line 382, scss/main.css */
+.cakePhotos {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap; }
+
+/* line 387, scss/main.css */
+.cakePhotos li {
+  padding: 10px 5px 20px 0; }
+
+/* line 389, scss/main.css */
+.cakePhotos li .topLeftPhoto {
+  background-image: url("../images/section two/img top left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 275px;
+  height: 235px; }
+
+/* line 395, scss/main.css */
+.cakePhotos li .topRightPhoto {
+  background-image: url("../images/section two/img top right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 275px;
+  height: 235px; }
+
+/* line 401, scss/main.css */
+.cakePhotos li .bottomRightPhoto {
+  background-image: url("../images/section two/img bottom right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 275px;
+  height: 235px; }
+
+/* line 407, scss/main.css */
+.cakePhotos li .bottomLeftPhoto {
+  background-image: url("../images/section two/img bottom left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 275px;
+  height: 235px; }
+
+/* line 414, scss/main.css */
+.stempel {
+  background-image: url("../images/section two/vector_section_one.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 275px;
+  height: 275px;
+  position: absolute;
+  left: 993px;
+  top: 250px;
+  z-index: 219; }

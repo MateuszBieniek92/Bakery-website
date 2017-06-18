@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vw;
+    //height: 100vw;
     position: relative;
     top: -115px;
 }
@@ -26,22 +26,133 @@
     color: #a47d5e;
     font-weight: 700;
     text-align: center;
-   padding-top: 15px;
+    padding-top: 15px;
     font-size: 16px;
-    
 }
 
-.description{
+.description {
     font-size: 14px;
-  font-family: 'Raleway','sans-serif';
-      color: rgb(86, 83, 76);
-  line-height: 1.714;
-  text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+    color: rgb(86, 83, 76);
+    line-height: 1.714;
+    text-align: center;
     padding: 30px;
     font-weight: 600;
-    
 }
 
+.chefCook {
+    font-size: 24px;
+    font-family: "Alegreya", 'sans-serif';
+    color: rgb(86, 83, 76);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+}
 
+.chefUl {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: calc(50% - 215px);
+    li {
+        padding: 40px 15px;
+        .chefName,
+        .chefSurname {
+            border-top: 1px solid rgb(215, 213, 202);
+            border-bottom: 1px solid rgb(215, 213, 202);
+            padding: 15px 20px;
+            margin-top: 30px;
+            font-size: 24px;
+            font-family: "Alegreya";
+            color: rgb(86, 83, 76);
+            line-height: 1.25;
+            text-align: center;
+        }
+        .chefPhoto {
+            background-image: url('../images/section two/avatar_section_one.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 125px;
+            height: 125px;
+            border: 5px solid white;
+            border-radius: 50%;
+        }
+    }
+}
+
+.leftMark {
+    margin-left: 75px;
+}
+
+.rightMark {
+    float: right;
+    margin: 15px 75px 0 0;
+}
+
+.leftMark,
+.rightMark {
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    color: #b6b5b2;
+    line-height: 0.5;
+}
+
+.cursiveText {
+    font-size: 24px;
+    font-family: 'Dancing Script', 'cursive';
+    color: rgb(164, 125, 94);
+    line-height: 1.25;
+    text-align: center;
+}
+
+.cakePhotos {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    li {
+        padding: 10px 5px 20px 0;
+        .topLeftPhoto {
+            background-image: url('../images/section two/img top left.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 275px;
+            height: 235px;
+        }
+        .topRightPhoto {
+            background-image: url('../images/section two/img top right.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 275px;
+            height: 235px;
+        }
+        .bottomRightPhoto {
+            background-image: url('../images/section two/img bottom right.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 275px;
+            height: 235px;
+        }
+        .bottomLeftPhoto {
+            background-image: url('../images/section two/img bottom left.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 275px;
+            height: 235px;
+        }
+    }
+}
+
+.stempel {
+    background-image: url('../images/section two/vector_section_one.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    left: 993px;
+    top: 250px;
+    z-index: 219;
+}
 
 
