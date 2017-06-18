@@ -357,3 +357,56 @@ header {
   font-weight: 700;
   color: white;
   letter-spacing: 2px; }
+
+/* line 280, scss/main.css */
+.midSectionPhoto {
+  background-image: url("../images/nav and header/border_bullets.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 135px;
+  position: relative;
+  z-index: 999;
+  top: -50px; }
+
+/* line 290, scss/main.css */
+.sectionTwo {
+  background-image: url("../images/section two/section-two-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+  top: -115px; }
+
+/* line 299, scss/main.css */
+.pos {
+  padding-top: 100px; }
+
+/* line 302, scss/main.css */
+.headerText {
+  line-height: 0.625;
+  font-size: 48px;
+  font-family: "Alegreya", 'sans-serif';
+  color: #56534c;
+  font-weight: 700;
+  text-align: center; }
+
+/* line 310, scss/main.css */
+.headerDescription {
+  font-family: "Alegreya", 'sans-serif';
+  color: #a47d5e;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 16px; }
+
+/* line 318, scss/main.css */
+.description {
+  font-size: 14px;
+  font-family: 'Raleway','sans-serif';
+  color: #56534c;
+  line-height: 1.714;
+  text-align: center;
+  padding: 30px;
+  font-weight: 600; }
