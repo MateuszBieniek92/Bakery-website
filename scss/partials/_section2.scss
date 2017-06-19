@@ -3,13 +3,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    //height: 100vw;
     position: relative;
     top: -115px;
 }
 
 .pos {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 750px) {
+        flex-direction: row;
+    }
 }
 
 .headerText {
@@ -159,10 +163,8 @@
             background-size: contain;
             width: 335px;
             height: 285px;
-            // margin-left: calc(50% - 150px);
             @media(min-width: 450px) {
                 left: calc(50% - 50px);
-                //position: relative;
             }
             @media(min-width: 630px) {
                 width: 290px;
@@ -231,13 +233,5 @@
     @media(min-width: 1200px) {
         left: calc(50% + 190px);
         top: 265px;
-    }
-}
-
-.pos {
-    display: flex;
-    flex-direction: column;
-    @media(min-width: 750px) {
-        flex-direction: row;
     }
 }

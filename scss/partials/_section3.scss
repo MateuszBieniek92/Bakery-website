@@ -1,0 +1,30 @@
+.sectionThree {
+    background-image: url('../images/section three/section-three-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    top: -115px;
+    height: 100vh;
+    position: relative;
+}
+
+.sectionThreeBg {
+    background-image: url('../images/section three/img-rating.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 620px;
+    margin-top: calc(50% - 410px);
+    margin-left: calc(50% - 550px);
+}
+
+.dishMenu {
+    background-image: url('../images/section three/menu.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 60%;
+    float: right;
+    margin-right: 0;
+    overflow: hidden;
+}
