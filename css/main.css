@@ -422,15 +422,31 @@ header {
 /* line 334, scss/main.css */
 .chefUl {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   list-style-type: none;
-  margin-left: calc(50% - 215px); }
+  margin-left: 0; }
 
-/* line 339, scss/main.css */
+@media (min-width: 750px) {
+  /* line 340, scss/main.css */
+  .chefUl {
+    flex-direction: row;
+    margin-left: calc(50% - 180px); } }
+
+@media (min-width: 850px) {
+  /* line 344, scss/main.css */
+  .chefUl {
+    margin-left: calc(50% - 215px); } }
+
+/* line 346, scss/main.css */
 .chefUl li {
-  padding: 40px 15px; }
+  padding: 20px 0; }
 
-/* line 341, scss/main.css */
+@media (min-width: 850px) {
+  /* line 349, scss/main.css */
+  .chefUl li {
+    padding: 40px 15px; } }
+
+/* line 351, scss/main.css */
 .chefUl li .chefName,
 .chefUl li .chefSurname {
   border-top: 1px solid #d7d5ca;
@@ -443,7 +459,7 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 352, scss/main.css */
+/* line 362, scss/main.css */
 .chefUl li .chefPhoto {
   background-image: url("../images/section two/avatar_section_one.png");
   background-repeat: no-repeat;
@@ -451,18 +467,44 @@ header {
   width: 125px;
   height: 125px;
   border: 5px solid white;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin-left: calc(50% - 65px); }
 
-/* line 361, scss/main.css */
+@media (min-width: 850px) {
+  /* line 372, scss/main.css */
+  .chefUl li .chefPhoto {
+    margin-left: 0; } }
+
+/* line 375, scss/main.css */
 .leftMark {
-  margin-left: 75px; }
+  margin-left: calc(10% - 20px); }
 
-/* line 364, scss/main.css */
+@media (min-width: 850px) {
+  /* line 378, scss/main.css */
+  .leftMark {
+    margin-left: calc(15% - 20px); } }
+
+@media (min-width: 1050px) {
+  /* line 381, scss/main.css */
+  .leftMark {
+    margin-left: calc(20% - 20px); } }
+
+/* line 384, scss/main.css */
 .rightMark {
   float: right;
-  margin: 15px 75px 0 0; }
+  margin: 15px calc(10% - 20px) 0 0; }
 
-/* line 368, scss/main.css */
+@media (min-width: 850px) {
+  /* line 388, scss/main.css */
+  .rightMark {
+    margin: 15px calc(15% - 20px) 0 0; } }
+
+@media (min-width: 1050px) {
+  /* line 391, scss/main.css */
+  .rightMark {
+    margin: 15px calc(20% - 20px) 0 0; } }
+
+/* line 394, scss/main.css */
 .leftMark,
 .rightMark {
   font-size: 24px;
@@ -470,7 +512,7 @@ header {
   color: #b6b5b2;
   line-height: 0.5; }
 
-/* line 375, scss/main.css */
+/* line 401, scss/main.css */
 .cursiveText {
   font-size: 24px;
   font-family: 'Dancing Script', 'cursive';
@@ -478,57 +520,166 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 382, scss/main.css */
+/* line 408, scss/main.css */
 .cakePhotos {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 100px; }
 
-/* line 387, scss/main.css */
+/* line 414, scss/main.css */
 .cakePhotos li {
   padding: 10px 5px 20px 0; }
 
-/* line 389, scss/main.css */
+/* line 416, scss/main.css */
 .cakePhotos li .topLeftPhoto {
-  background-image: url("../images/section two/img top left.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 275px;
-  height: 235px; }
+  background-image: url("../images/section two/img top left.png"); }
 
-/* line 395, scss/main.css */
+/* line 418, scss/main.css */
 .cakePhotos li .topRightPhoto {
-  background-image: url("../images/section two/img top right.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 275px;
-  height: 235px; }
+  background-image: url("../images/section two/img top right.png"); }
 
-/* line 401, scss/main.css */
+/* line 420, scss/main.css */
 .cakePhotos li .bottomRightPhoto {
-  background-image: url("../images/section two/img bottom right.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 275px;
-  height: 235px; }
+  background-image: url("../images/section two/img bottom right.png"); }
 
-/* line 407, scss/main.css */
+/* line 422, scss/main.css */
 .cakePhotos li .bottomLeftPhoto {
-  background-image: url("../images/section two/img bottom left.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 275px;
-  height: 235px; }
+  background-image: url("../images/section two/img bottom left.png"); }
 
-/* line 414, scss/main.css */
-.stempel {
-  background-image: url("../images/section two/vector_section_one.png");
+/* line 424, scss/main.css */
+.cakePhotos li .topLeftPhoto,
+.cakePhotos li .topRightPhoto,
+.cakePhotos li .bottomLeftPhoto,
+.cakePhotos li .bottomRightPhoto {
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 275px;
-  height: 275px;
-  position: absolute;
-  left: 993px;
-  top: 250px;
-  z-index: 219; }
+  background-size: contain;
+  width: 335px;
+  height: 285px; }
+
+@media (min-width: 450px) {
+  /* line 433, scss/main.css */
+  .cakePhotos li .topLeftPhoto,
+  .cakePhotos li .topRightPhoto,
+  .cakePhotos li .bottomLeftPhoto,
+  .cakePhotos li .bottomRightPhoto {
+    left: calc(50% - 50px); } }
+
+@media (min-width: 630px) {
+  /* line 439, scss/main.css */
+  .cakePhotos li .topLeftPhoto,
+  .cakePhotos li .topRightPhoto,
+  .cakePhotos li .bottomLeftPhoto,
+  .cakePhotos li .bottomRightPhoto {
+    width: 290px;
+    height: 245px; } }
+
+@media (min-width: 751px) {
+  /* line 446, scss/main.css */
+  .cakePhotos li .topLeftPhoto,
+  .cakePhotos li .topRightPhoto,
+  .cakePhotos li .bottomLeftPhoto,
+  .cakePhotos li .bottomRightPhoto {
+    width: 165px;
+    height: 140px; } }
+
+@media (min-width: 851px) {
+  /* line 453, scss/main.css */
+  .cakePhotos li .topLeftPhoto,
+  .cakePhotos li .topRightPhoto,
+  .cakePhotos li .bottomLeftPhoto,
+  .cakePhotos li .bottomRightPhoto {
+    width: 195px;
+    height: 170px; } }
+
+@media (min-width: 1000px) {
+  /* line 460, scss/main.css */
+  .cakePhotos li .topLeftPhoto,
+  .cakePhotos li .topRightPhoto,
+  .cakePhotos li .bottomLeftPhoto,
+  .cakePhotos li .bottomRightPhoto {
+    width: 231px;
+    height: 195px; } }
+
+@media (min-width: 1100px) {
+  /* line 467, scss/main.css */
+  .cakePhotos li .topLeftPhoto,
+  .cakePhotos li .topRightPhoto,
+  .cakePhotos li .bottomLeftPhoto,
+  .cakePhotos li .bottomRightPhoto {
+    width: 260px;
+    height: 235px; } }
+
+@media (min-width: 1200px) {
+  /* line 474, scss/main.css */
+  .cakePhotos li .topLeftPhoto,
+  .cakePhotos li .topRightPhoto,
+  .cakePhotos li .bottomLeftPhoto,
+  .cakePhotos li .bottomRightPhoto {
+    width: 275px;
+    height: 235px; } }
+
+/* line 481, scss/main.css */
+.stempel {
+  display: none; }
+
+@media (min-width: 750px) {
+  /* line 484, scss/main.css */
+  .stempel {
+    display: inline-block;
+    background-image: url("../images/section two/vector_section_one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: 219;
+    left: calc(50% + 89px);
+    top: 184px; } }
+
+@media (min-width: 850px) {
+  /* line 496, scss/main.css */
+  .stempel {
+    left: calc(50% + 120px);
+    top: 210px; } }
+
+@media (min-width: 900px) {
+  /* line 500, scss/main.css */
+  .stempel {
+    left: calc(50% + 120px);
+    top: 210px; } }
+
+@media (min-width: 1000px) {
+  /* line 504, scss/main.css */
+  .stempel {
+    left: calc(50% + 115px);
+    top: 205px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 219;
+    left: calc(50% + 145px);
+    top: 230px; } }
+
+@media (min-width: 1100px) {
+  /* line 514, scss/main.css */
+  .stempel {
+    left: calc(50% + 173px);
+    top: 260px; } }
+
+@media (min-width: 1200px) {
+  /* line 518, scss/main.css */
+  .stempel {
+    left: calc(50% + 190px);
+    top: 265px; } }
+
+/* line 522, scss/main.css */
+.pos {
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 750px) {
+  /* line 526, scss/main.css */
+  .pos {
+    flex-direction: row; } }

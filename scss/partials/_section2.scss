@@ -51,11 +51,21 @@
 
 .chefUl {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style-type: none;
-    margin-left: calc(50% - 215px);
+    margin-left: 0;
+    @media(min-width: 750px) {
+        flex-direction: row;
+        margin-left: calc(50% - 180px);
+    }
+    @media(min-width: 850px) {
+        margin-left: calc(50% - 215px);
+    }
     li {
-        padding: 40px 15px;
+        padding: 20px 0;
+        @media(min-width: 850px) {
+            padding: 40px 15px;
+        }
         .chefName,
         .chefSurname {
             border-top: 1px solid rgb(215, 213, 202);
@@ -76,17 +86,33 @@
             height: 125px;
             border: 5px solid white;
             border-radius: 50%;
+            margin-left: calc(50% - 65px);
+            @media(min-width: 850px) {
+                margin-left: 0;
+            }
         }
     }
 }
 
 .leftMark {
-    margin-left: 75px;
+    margin-left: calc(10% - 20px);
+    @media(min-width: 850px) {
+        margin-left: calc(15% - 20px);
+    }
+    @media(min-width: 1050px) {
+        margin-left: calc(20% - 20px);
+    }
 }
 
 .rightMark {
     float: right;
-    margin: 15px 75px 0 0;
+    margin: 15px calc(10% - 20px) 0 0;
+    @media(min-width: 850px) {
+        margin: 15px calc(15% - 20px) 0 0;
+    }
+    @media(min-width: 1050px) {
+        margin: 15px calc(20% - 20px) 0 0;
+    }
 }
 
 .leftMark,
@@ -110,49 +136,108 @@
     flex-direction: row;
     list-style-type: none;
     flex-wrap: wrap;
+    margin-bottom: 100px;
     li {
         padding: 10px 5px 20px 0;
         .topLeftPhoto {
             background-image: url('../images/section two/img top left.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 275px;
-            height: 235px;
         }
         .topRightPhoto {
             background-image: url('../images/section two/img top right.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 275px;
-            height: 235px;
         }
         .bottomRightPhoto {
             background-image: url('../images/section two/img bottom right.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 275px;
-            height: 235px;
         }
         .bottomLeftPhoto {
             background-image: url('../images/section two/img bottom left.png');
+        }
+        .topLeftPhoto,
+        .topRightPhoto,
+        .bottomLeftPhoto,
+        .bottomRightPhoto {
             background-repeat: no-repeat;
-            background-size: cover;
-            width: 275px;
-            height: 235px;
+            background-size: contain;
+            width: 335px;
+            height: 285px;
+            // margin-left: calc(50% - 150px);
+            @media(min-width: 450px) {
+                left: calc(50% - 50px);
+                //position: relative;
+            }
+            @media(min-width: 630px) {
+                width: 290px;
+                height: 245px;
+            }
+            @media(min-width: 751px) {
+                width: 165px;
+                height: 140px;
+            }
+            @media(min-width: 851px) {
+                width: 195px;
+                height: 170px;
+            }
+            @media(min-width: 1000px) {
+                width: 231px;
+                height: 195px;
+            }
+            @media(min-width: 1100px) {
+                width: 260px;
+                height: 235px;
+            }
+            @media(min-width: 1200px) {
+                width: 275px;
+                height: 235px;
+            }
         }
     }
 }
 
 .stempel {
-    background-image: url('../images/section two/vector_section_one.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 275px;
-    height: 275px;
-    position: absolute;
-    left: 993px;
-    top: 250px;
-    z-index: 219;
+    display: none;
+    @media(min-width: 750px) {
+        display: inline-block;
+        background-image: url('../images/section two/vector_section_one.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        z-index: 219;
+        left: calc(50% + 89px);
+        top: 184px;
+    }
+    @media(min-width: 850px) {
+        left: calc(50% + 120px);
+        top: 210px;
+    }
+    @media(min-width: 900px) {
+        left: calc(50% + 120px);
+        top: 210px;
+    }
+    @media(min-width: 1000px) {
+        left: calc(50% + 115px);
+        top: 205px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        z-index: 219;
+        left: calc(50% + 145px);
+        top: 230px;
+    }
+    @media(min-width: 1100px) {
+        left: calc(50% + 173px);
+        top: 260px;
+    }
+    @media(min-width: 1200px) {
+        left: calc(50% + 190px);
+        top: 265px;
+    }
 }
 
-
+.pos {
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 750px) {
+        flex-direction: row;
+    }
+}
