@@ -710,3 +710,72 @@ header {
   float: right;
   margin-right: 0;
   overflow: hidden; }
+
+/* line 554, scss/main.css */
+.windmill {
+  background-image: url("../images/section three/Vektor-Smartobjekt windmill.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 80%;
+  background-position: right bottom; }
+
+/* line 562, scss/main.css */
+.dishName {
+  margin: 100px 0 20px 80px;
+  text-align: left; }
+
+/* line 566, scss/main.css */
+.headerDescrption {
+  margin: 0 0 20px 80px; }
+
+/* line 569, scss/main.css */
+.recipeText {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: #56534c;
+  line-height: 1.714;
+  font-weight: 400;
+  width: 65%;
+  text-align: left;
+  margin: 65px 0 0 80px; }
+
+/* line 579, scss/main.css */
+.stars {
+  background-image: url("../images/section three/rating.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 20px;
+  margin: 35px 0 0 80px; }
+
+/* line 587, scss/main.css */
+.dishSlider {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: calc(50% - 195px); }
+
+/* line 591, scss/main.css */
+.dishSlider li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 60px 50px 0 0px; }
+
+/* line 596, scss/main.css */
+.dishSlider :first-child {
+  background-image: url("../images/section three/img-3-slider-section-two.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* line 600, scss/main.css */
+.dishSlider :nth-child(2) {
+  background-image: url("../images/section three/img-2-slider-section-two.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* line 604, scss/main.css */
+.dishSlider :nth-child(3) {
+  background-image: url("../images/section three/img-slider-section-two.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
