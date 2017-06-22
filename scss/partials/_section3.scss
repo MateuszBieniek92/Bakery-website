@@ -13,12 +13,14 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 620px;
+    height: 603px;
     margin-top: calc(50% - 410px);
     margin-left: calc(50% - 550px);
 }
 
 .dishMenu {
+    position: relative;
+    top: -603px;
     background-image: url('../images/section three/menu.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -44,6 +46,7 @@
 }
 
 .headerDescrption {
+    color: #aa8669;
     margin: 0 0 20px 80px;
 }
 
@@ -91,5 +94,51 @@
         background-image: url('../images/section three/img-slider-section-two.png');
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+.leftSliderBtn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d8bba3;
+    border-radius: 100%;
+    color: #d8bba3;
+    display: inline-block;
+    float: left;
+    margin: -75px 0px 0px 65px;
+    font-size: 25px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    padding: 1px calc(50% - 330px);
+    cursor: pointer;
+}
+
+.rightSliderBtn {
+    float: right;
+    margin: -75px 55px 0px 0;
+    padding: 1px calc(50% - 329px);
+}
+
+.leftSliderBtn:hover,
+.rightSliderBtn:hover {
+    border: 2px solid #56534c;
+    color: #56534c;
+}
+
+.bullets {
+    margin-left: calc(50% - 45px);
+    list-style-type: none;
+    margin-top: 25px;
+    li {
+        margin: 4px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #d8bba3;
+        border-radius: 100%;
+    }
+     :first-child {
+        border: 2px solid #d8bba3;
+        background: none;
     }
 }
