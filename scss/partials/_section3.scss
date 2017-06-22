@@ -6,6 +6,11 @@
     top: -115px;
     //height: 100vh;
     position: relative;
+    background-attachment: fixed;
+    @media(min-width: 1000px) {
+       // background-size: contain;
+        height: 1382px;
+    }
 }
 
 .sectionThreeBg {
