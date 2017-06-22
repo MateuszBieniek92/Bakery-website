@@ -1,0 +1,41 @@
+.sectionFour {
+    background-image: url('../images/section four/section-four-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    top: -115px;
+    //height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.bfMenu {
+    background-image: url('../images/section four/menuBf.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 735px;
+    margin: 178px 0;
+    position: relative;
+    z-index: 4;
+    right: 70px;
+    top: -35px;
+}
+
+.bfMenuBgFirst {
+    position: absolute;
+    z-index: 3;
+    position: relative;
+    top: -25px;
+    right: 50px;
+    height: 680px;
+    background-size: contain;
+}
+
+.bfMenuBgSecond {
+    position: absolute;
+    z-index: 2;
+    position: relative;
+    height: 630px;
+    background-size: contain;
+    right: 0;
+}
