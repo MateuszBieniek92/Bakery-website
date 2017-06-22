@@ -4,31 +4,44 @@
     background-size: cover;
     width: 100vw;
     top: -115px;
-    height: 100vh;
+    //height: 100vh;
     position: relative;
 }
 
 .sectionThreeBg {
-    background-image: url('../images/section three/img-rating.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 603px;
-    margin-top: calc(50% - 410px);
-    margin-left: calc(50% - 550px);
+    display: none;
+    @media (min-width: 1000px) {
+        display: block;
+        background-image: url('../images/section three/img-rating.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 603px;
+        margin-top: calc(50% - 410px);
+        margin-left: calc(50% - 550px);
+    }
 }
 
 .dishMenu {
+    margin: 100px 0 100px 0;
     position: relative;
-    top: -603px;
+    top: 0;
     background-image: url('../images/section three/menu.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    width: 60%;
-    float: right;
+    background-repeat: repeat;
+    background-size: cover;
+    /* height: 100%; */
+    width: 90%;
     margin-right: 0;
     overflow: hidden;
+    @media(min-width: 450px) {}
+    @media (min-width: 1000px) {
+        margin: 0 0 0 0;
+        top: -603px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60%;
+        float: right;
+    }
 }
 
 .windmill {
@@ -73,12 +86,27 @@
 .dishSlider {
     list-style-type: none;
     display: inline-block;
-    margin-left: calc(50% - 195px);
+    margin-left: calc(50% - 73px);
+    @media(min-width: 450px) {
+        margin-left: calc(50% - 160px);
+    }
+    @media (min-width: 1000px) {
+        margin-left: calc(50% - 195px);
+    }
     li {
         display: inline-block;
-        width: 100px;
-        height: 100px;
-        margin: 60px 50px 0 0px;
+        width: 50px;
+        height: 50px;
+        margin: 35px 10px 0 0;
+        @media(min-width: 450px) {
+            width: 60px;
+            height: 60px;
+        }
+        @media (min-width: 1000px) {
+            width: 100px;
+            height: 100px;
+            margin: 60px 50px 0 0px;
+        }
     }
      :first-child {
         background-image: url('../images/section three/img-3-slider-section-two.png');
@@ -98,6 +126,7 @@
 }
 
 .leftSliderBtn {
+    text-align: center;
     width: 40px;
     height: 40px;
     border: 2px solid #d8bba3;
@@ -105,18 +134,28 @@
     color: #d8bba3;
     display: inline-block;
     float: left;
-    margin: -75px 0px 0px 65px;
+    margin: -50px 0px 0px 25px;
     font-size: 25px;
     font-family: 'Raleway';
     font-weight: 700;
-    padding: 1px calc(50% - 330px);
     cursor: pointer;
+    @media(min-width: 450px) {
+        margin: 40px 0 0px 30px;
+    }
+    @media(min-width: 1000px) {
+        margin: -75px 0px 0px 65px;
+    }
 }
 
 .rightSliderBtn {
     float: right;
-    margin: -75px 55px 0px 0;
-    padding: 1px calc(50% - 329px);
+    margin: -50px -5px 0px 0;
+    @media(min-width: 450px) {
+        margin: 40px 15px 0px 0;
+    }
+    @media(min-width: 1000px) {
+        margin: -75px 55px 0px 0;
+    }
 }
 
 .leftSliderBtn:hover,
