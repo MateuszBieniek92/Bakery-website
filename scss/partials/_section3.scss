@@ -32,7 +32,6 @@
     /* height: 100%; */
     width: 90%;
     margin-right: 0;
-    overflow: hidden;
     @media(min-width: 450px) {}
     @media (min-width: 1000px) {
         margin: 0 0 0 0;
@@ -90,6 +89,15 @@
     @media(min-width: 450px) {
         margin-left: calc(50% - 160px);
     }
+    @media(min-width: 550px) {
+        margin-left: calc(50% - 175px);
+    }
+    @media(min-width: 650px) {
+        margin-left: calc(50% - 190px);
+    }
+    @media(min-width: 750px) {
+        margin-left: calc(50% - 205px);
+    }
     @media (min-width: 1000px) {
         margin-left: calc(50% - 195px);
     }
@@ -101,6 +109,18 @@
         @media(min-width: 450px) {
             width: 60px;
             height: 60px;
+        }
+        @media(min-width: 550px) {
+            width: 70px;
+            height: 70px;
+        }
+        @media(min-width: 650px) {
+            width: 80px;
+            height: 80px;
+        }
+        @media(min-width: 750px) {
+            width: 90px;
+            height: 90px;
         }
         @media (min-width: 1000px) {
             width: 100px;
@@ -126,6 +146,7 @@
 }
 
 .leftSliderBtn {
+    transform: rotate(90deg);
     text-align: center;
     width: 40px;
     height: 40px;
@@ -142,16 +163,35 @@
     @media(min-width: 450px) {
         margin: 40px 0 0px 30px;
     }
+    @media(min-width: 550px) {
+        margin: 50px 0 0px 30px;
+    }
+    @media(min-width: 650px) {
+        margin: 55px 0 0px 30px;
+    }
+    @media(min-width: 750px) {
+        margin: 60px 0 0px 30px;
+    }
     @media(min-width: 1000px) {
         margin: -75px 0px 0px 65px;
     }
 }
 
 .rightSliderBtn {
+    transform: rotate(-90deg);
     float: right;
     margin: -50px -5px 0px 0;
     @media(min-width: 450px) {
         margin: 40px 15px 0px 0;
+    }
+    @media(min-width: 550px) {
+        margin: 50px 15px 0px 0;
+    }
+    @media(min-width: 650px) {
+        margin: 55px 15px 0px 0;
+    }
+    @media(min-width: 750px) {
+        margin: 60px 15px 0px 0;
     }
     @media(min-width: 1000px) {
         margin: -75px 55px 0px 0;
@@ -179,5 +219,43 @@
      :first-child {
         border: 2px solid #d8bba3;
         background: none;
+    }
+}
+
+.cookTime {
+    display: none;
+    position: absolute;
+    top: -120px;
+    right: 0;
+    z-index: 999;
+    background-image: url('../images/section three/Vektor-Smartobjekt-section-two.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+    -webkit-box-shadow: 0px 0px 58px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 58px -14px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 58px -14px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    @media(min-width: 1100px) {
+        display: inline-block;
+    }
+    @media(min-width: 1500px) {
+        right: -125px;
+    }
+    h3 {
+        margin: 40px 0 0 0;
+        font-size: 18px;
+    }
+    h2 {
+        color: #dfc691;
+        margin: 0 0 0 0;
+        font-size: 90px;
+    }
+    p {
+        color: #979285;
+        margin: 0 0 0 0;
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 }
