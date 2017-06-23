@@ -1,0 +1,88 @@
+.sectionFive {
+    background-image: url('../images/section five/section-five-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    top: -115px;
+    //height: 100vh;
+    position: relative;
+    color: white;
+    background-attachment: fixed;
+    @media(min-width: 1000px) {
+        top: -611px;
+    }
+}
+
+.JibaritoSandwich {
+    font-size: 48px;
+    font-family: "Alegreya";
+    color: rgb(86, 83, 76);
+    font-weight: bold;
+    line-height: 0.625;
+    text-align: center;
+    margin: -25px 0 0 0;
+}
+
+.bgSandwich {
+    background-image: url('../images/section five/Vektor-Smartobjekt-section-five.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 105px;
+    height: 115px;
+    margin-left: calc(50% - 60px);
+}
+
+.swPhoto {
+    width: 100px;
+    height: 100px;
+    margin-left: calc(50% - 50px);
+    margin-bottom: 25px;
+}
+
+.swPhotoOne {
+    background-image: url('../images/section five/img-1-section-five.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swPhotoTwo {
+    background-image: url('../images/section five/img-2-section-five.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swPhotoThree {
+    background-image: url('../images/section five/img-3-section-five.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swHeader {
+    font-size: 30px;
+    font-family: "Alegreya";
+    color: rgb(164, 125, 94);
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.swDesc {
+    font-size: 14px;
+    font-family: "Raleway", 'sans-serif';
+    color: rgb(86, 83, 76);
+    line-height: 1.429;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.swCookBg {
+    background-image: url('../images/section five/img_bg_info-section-five.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    height: 516px;
+    border: 8px solid white;
+    margin-top: calc(50% - 300px);
+    margin-left: calc(50% - 385px);
+}
