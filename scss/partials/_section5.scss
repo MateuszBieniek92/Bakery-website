@@ -5,7 +5,6 @@
     width: 100vw;
     position: relative;
     color: white;
-    background-attachment: fixed;
 }
 
 .JibaritoSandwich {
@@ -134,4 +133,27 @@
             letter-spacing: 2px;
         }
     }
+}
+
+.fullRecipe {
+    font-size: 18px;
+    font-family: "Alegreya";
+    color: rgb(223, 198, 145);
+    font-weight: bold;
+    text-align: center;
+    border: 1px dashed rgb(223, 198, 145);
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    padding-top: calc(50% - 410px);
+    position: relative;
+    float: left;
+    top: 530px;
+    right: 20px;
+}
+
+.fullRecipe:hover {
+    transform: scale(1.2, 1.2);
+    transition: 500ms;
 }

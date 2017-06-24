@@ -72,10 +72,9 @@
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  border: 1px solid red;
   padding: 10px; }
 
-/* line 62, scss/main.css */
+/* line 61, scss/main.css */
 header {
   position: absolute;
   height: 50px;
@@ -83,7 +82,7 @@ header {
   top: 0;
   width: 100vw; }
 
-/* line 69, scss/main.css */
+/* line 68, scss/main.css */
 .logo {
   float: left;
   display: inline-block;
@@ -95,11 +94,11 @@ header {
   color: white; }
 
 @media (min-width: 750px) {
-  /* line 79, scss/main.css */
+  /* line 78, scss/main.css */
   .logo {
     margin-top: -0.35em; } }
 
-/* line 82, scss/main.css */
+/* line 81, scss/main.css */
 .menu {
   display: none;
   margin-top: 1em;
@@ -108,38 +107,39 @@ header {
   text-align: center; }
 
 @media (min-width: 750px) {
-  /* line 89, scss/main.css */
+  /* line 88, scss/main.css */
   .menu {
     display: block; } }
 
-/* line 91, scss/main.css */
+/* line 90, scss/main.css */
 .menu li {
   font-family: 'Alegreya', 'sans serif';
   display: inline-block;
   font-size: 14px;
   cursor: pointer; }
 
-/* line 96, scss/main.css */
+/* line 95, scss/main.css */
 .menu li span {
   padding: 0 30px; }
 
 @media (min-width: 750px) {
-  /* line 99, scss/main.css */
+  /* line 98, scss/main.css */
   .menu li {
     font-size: 11px; } }
 
 @media (min-width: 900px) {
-  /* line 102, scss/main.css */
+  /* line 101, scss/main.css */
   .menu li {
     font-size: 14px; } }
 
-/* line 104, scss/main.css */
+/* line 103, scss/main.css */
 .menu li:hover {
   color: rgba(0, 0, 0, 0.5); }
 
-/* line 106, scss/main.css */
+/* line 105, scss/main.css */
 .menu li:hover span {
-  color: white; }
+  color: white;
+  cursor: default; }
 
 /* line 109, scss/main.css */
 .hamburger {
@@ -359,6 +359,12 @@ header {
   letter-spacing: 2px; }
 
 /* line 280, scss/main.css */
+.menuBtn:hover {
+  transform: scale(1.2, 1.2);
+  transition: 500ms;
+  cursor: pointer; }
+
+/* line 285, scss/main.css */
 .midSectionPhoto {
   position: relative;
   background-position: bottom;
@@ -371,16 +377,16 @@ header {
   top: 50px; }
 
 @media (min-width: 450px) {
-  /* line 291, scss/main.css */
+  /* line 296, scss/main.css */
   .midSectionPhoto {
     top: 65px; } }
 
 @media (min-width: 800px) {
-  /* line 294, scss/main.css */
+  /* line 299, scss/main.css */
   .midSectionPhoto {
     top: 95px; } }
 
-/* line 297, scss/main.css */
+/* line 302, scss/main.css */
 .sectionTwo {
   background-image: url("../images/section two/section-two-image.png");
   background-repeat: no-repeat;
@@ -388,18 +394,18 @@ header {
   width: 100vw;
   position: relative; }
 
-/* line 304, scss/main.css */
+/* line 309, scss/main.css */
 .pos {
   padding-top: 100px;
   display: flex;
   flex-direction: column; }
 
 @media (min-width: 750px) {
-  /* line 309, scss/main.css */
+  /* line 314, scss/main.css */
   .pos {
     flex-direction: row; } }
 
-/* line 312, scss/main.css */
+/* line 317, scss/main.css */
 .headerText {
   line-height: 0.625;
   font-size: 48px;
@@ -408,7 +414,7 @@ header {
   font-weight: 700;
   text-align: center; }
 
-/* line 320, scss/main.css */
+/* line 325, scss/main.css */
 .headerDescription {
   font-family: "Alegreya", 'sans-serif';
   color: #a47d5e;
@@ -417,7 +423,7 @@ header {
   padding-top: 15px;
   font-size: 16px; }
 
-/* line 328, scss/main.css */
+/* line 333, scss/main.css */
 .description {
   font-size: 14px;
   font-family: 'Raleway', 'sans-serif';
@@ -427,7 +433,7 @@ header {
   padding: 30px;
   font-weight: 600; }
 
-/* line 337, scss/main.css */
+/* line 342, scss/main.css */
 .chefCook {
   font-size: 24px;
   font-family: "Alegreya", 'sans-serif';
@@ -436,7 +442,7 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 345, scss/main.css */
+/* line 350, scss/main.css */
 .chefUl {
   display: flex;
   flex-direction: column;
@@ -444,26 +450,26 @@ header {
   margin-left: 0; }
 
 @media (min-width: 750px) {
-  /* line 351, scss/main.css */
+  /* line 356, scss/main.css */
   .chefUl {
     flex-direction: row;
     margin-left: calc(50% - 180px); } }
 
 @media (min-width: 850px) {
-  /* line 355, scss/main.css */
+  /* line 360, scss/main.css */
   .chefUl {
     margin-left: calc(50% - 215px); } }
 
-/* line 357, scss/main.css */
+/* line 362, scss/main.css */
 .chefUl li {
   padding: 20px 0; }
 
 @media (min-width: 850px) {
-  /* line 360, scss/main.css */
+  /* line 365, scss/main.css */
   .chefUl li {
     padding: 40px 15px; } }
 
-/* line 362, scss/main.css */
+/* line 367, scss/main.css */
 .chefUl li .chefName,
 .chefUl li .chefSurname {
   border-top: 1px solid #d7d5ca;
@@ -476,7 +482,7 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 373, scss/main.css */
+/* line 378, scss/main.css */
 .chefUl li .chefPhoto {
   background-image: url("../images/section two/avatar_section_one.png");
   background-repeat: no-repeat;
@@ -488,40 +494,40 @@ header {
   margin-left: calc(50% - 65px); }
 
 @media (min-width: 850px) {
-  /* line 383, scss/main.css */
+  /* line 388, scss/main.css */
   .chefUl li .chefPhoto {
     margin-left: 0; } }
 
-/* line 386, scss/main.css */
+/* line 391, scss/main.css */
 .leftMark {
   margin-left: calc(10% - 20px); }
 
 @media (min-width: 850px) {
-  /* line 389, scss/main.css */
+  /* line 394, scss/main.css */
   .leftMark {
     margin-left: calc(15% - 20px); } }
 
 @media (min-width: 1050px) {
-  /* line 392, scss/main.css */
+  /* line 397, scss/main.css */
   .leftMark {
     margin-left: calc(20% - 20px); } }
 
-/* line 395, scss/main.css */
+/* line 400, scss/main.css */
 .rightMark {
   float: right;
   margin: 15px calc(10% - 20px) 0 0; }
 
 @media (min-width: 850px) {
-  /* line 399, scss/main.css */
+  /* line 404, scss/main.css */
   .rightMark {
     margin: 15px calc(15% - 20px) 0 0; } }
 
 @media (min-width: 1050px) {
-  /* line 402, scss/main.css */
+  /* line 407, scss/main.css */
   .rightMark {
     margin: 15px calc(20% - 20px) 0 0; } }
 
-/* line 405, scss/main.css */
+/* line 410, scss/main.css */
 .leftMark,
 .rightMark {
   font-size: 24px;
@@ -529,7 +535,7 @@ header {
   color: #b6b5b2;
   line-height: 0.5; }
 
-/* line 412, scss/main.css */
+/* line 417, scss/main.css */
 .cursiveText {
   font-size: 24px;
   font-family: 'Dancing Script', 'cursive';
@@ -537,7 +543,7 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 419, scss/main.css */
+/* line 424, scss/main.css */
 .cakePhotos {
   display: flex;
   flex-direction: row;
@@ -545,27 +551,27 @@ header {
   flex-wrap: wrap;
   margin-bottom: 100px; }
 
-/* line 425, scss/main.css */
+/* line 430, scss/main.css */
 .cakePhotos li {
   padding: 10px 5px 20px 0; }
 
-/* line 427, scss/main.css */
+/* line 432, scss/main.css */
 .cakePhotos li .topLeftPhoto {
   background-image: url("../images/section two/img top left.png"); }
 
-/* line 429, scss/main.css */
+/* line 434, scss/main.css */
 .cakePhotos li .topRightPhoto {
   background-image: url("../images/section two/img top right.png"); }
 
-/* line 431, scss/main.css */
+/* line 436, scss/main.css */
 .cakePhotos li .bottomRightPhoto {
   background-image: url("../images/section two/img bottom right.png"); }
 
-/* line 433, scss/main.css */
+/* line 438, scss/main.css */
 .cakePhotos li .bottomLeftPhoto {
   background-image: url("../images/section two/img bottom left.png"); }
 
-/* line 435, scss/main.css */
+/* line 440, scss/main.css */
 .cakePhotos li .topLeftPhoto,
 .cakePhotos li .topRightPhoto,
 .cakePhotos li .bottomLeftPhoto,
@@ -576,7 +582,7 @@ header {
   height: 285px; }
 
 @media (min-width: 450px) {
-  /* line 444, scss/main.css */
+  /* line 449, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -584,7 +590,7 @@ header {
     left: calc(50% - 50px); } }
 
 @media (min-width: 630px) {
-  /* line 450, scss/main.css */
+  /* line 455, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -593,7 +599,7 @@ header {
     height: 245px; } }
 
 @media (min-width: 751px) {
-  /* line 457, scss/main.css */
+  /* line 462, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -602,7 +608,7 @@ header {
     height: 140px; } }
 
 @media (min-width: 851px) {
-  /* line 464, scss/main.css */
+  /* line 469, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -611,7 +617,7 @@ header {
     height: 170px; } }
 
 @media (min-width: 1000px) {
-  /* line 471, scss/main.css */
+  /* line 476, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -620,7 +626,7 @@ header {
     height: 195px; } }
 
 @media (min-width: 1100px) {
-  /* line 478, scss/main.css */
+  /* line 483, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -629,7 +635,7 @@ header {
     height: 235px; } }
 
 @media (min-width: 1200px) {
-  /* line 485, scss/main.css */
+  /* line 490, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -637,12 +643,12 @@ header {
     width: 275px;
     height: 235px; } }
 
-/* line 492, scss/main.css */
+/* line 497, scss/main.css */
 .stempel {
   display: none; }
 
 @media (min-width: 750px) {
-  /* line 495, scss/main.css */
+  /* line 500, scss/main.css */
   .stempel {
     display: inline-block;
     background-image: url("../images/section two/vector_section_one.png");
@@ -656,19 +662,19 @@ header {
     top: 184px; } }
 
 @media (min-width: 850px) {
-  /* line 507, scss/main.css */
+  /* line 512, scss/main.css */
   .stempel {
     left: calc(50% + 120px);
     top: 210px; } }
 
 @media (min-width: 900px) {
-  /* line 511, scss/main.css */
+  /* line 516, scss/main.css */
   .stempel {
     left: calc(50% + 120px);
     top: 210px; } }
 
 @media (min-width: 1000px) {
-  /* line 515, scss/main.css */
+  /* line 520, scss/main.css */
   .stempel {
     left: calc(50% + 115px);
     top: 205px;
@@ -680,18 +686,18 @@ header {
     top: 230px; } }
 
 @media (min-width: 1100px) {
-  /* line 525, scss/main.css */
+  /* line 530, scss/main.css */
   .stempel {
     left: calc(50% + 173px);
     top: 260px; } }
 
 @media (min-width: 1200px) {
-  /* line 529, scss/main.css */
+  /* line 534, scss/main.css */
   .stempel {
     left: calc(50% + 190px);
     top: 265px; } }
 
-/* line 533, scss/main.css */
+/* line 538, scss/main.css */
 .sectionThree {
   background-image: url("../images/section three/section-three-bg.png");
   background-repeat: no-repeat;
@@ -699,12 +705,12 @@ header {
   width: 100vw;
   position: relative; }
 
-/* line 540, scss/main.css */
+/* line 545, scss/main.css */
 .sectionThreeBg {
   background-image: none; }
 
 @media (min-width: 1000px) {
-  /* line 543, scss/main.css */
+  /* line 548, scss/main.css */
   .sectionThreeBg {
     display: block;
     background-image: url("../images/section three/img-rating.png");
@@ -714,7 +720,7 @@ header {
     height: 603px;
     margin: calc(50% - 410px) calc(50% - 590px); } }
 
-/* line 552, scss/main.css */
+/* line 557, scss/main.css */
 .dishMenu {
   margin: 100px 0 100px 0;
   position: relative;
@@ -727,7 +733,7 @@ header {
   margin-right: 0; }
 
 @media (min-width: 1000px) {
-  /* line 563, scss/main.css */
+  /* line 568, scss/main.css */
   .dishMenu {
     margin: 0 0 0 0;
     background-repeat: no-repeat;
@@ -735,7 +741,7 @@ header {
     width: 60%;
     float: right; } }
 
-/* line 570, scss/main.css */
+/* line 575, scss/main.css */
 .windmill {
   background-image: url("../images/section three/Vektor-Smartobjekt windmill.png");
   background-repeat: no-repeat;
@@ -744,17 +750,17 @@ header {
   height: 80%;
   background-position: right bottom; }
 
-/* line 578, scss/main.css */
+/* line 583, scss/main.css */
 .dishName {
   margin: 100px 0 20px 80px;
   text-align: left; }
 
-/* line 582, scss/main.css */
+/* line 587, scss/main.css */
 .headerDescrption {
   color: #aa8669;
   margin: 0 0 20px 80px; }
 
-/* line 586, scss/main.css */
+/* line 591, scss/main.css */
 .recipeText {
   font-size: 16px;
   font-family: "Raleway";
@@ -765,7 +771,7 @@ header {
   text-align: left;
   margin: 65px 0 0 80px; }
 
-/* line 596, scss/main.css */
+/* line 601, scss/main.css */
 .stars {
   background-image: url("../images/section three/rating.png");
   background-repeat: no-repeat;
@@ -774,38 +780,38 @@ header {
   height: 20px;
   margin: 35px 0 0 80px; }
 
-/* line 604, scss/main.css */
+/* line 609, scss/main.css */
 .dishSlider {
   list-style-type: none;
   display: inline-block;
   margin-left: calc(50% - 73px); }
 
 @media (min-width: 450px) {
-  /* line 609, scss/main.css */
+  /* line 614, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 160px); } }
 
 @media (min-width: 550px) {
-  /* line 612, scss/main.css */
+  /* line 617, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 175px); } }
 
 @media (min-width: 650px) {
-  /* line 615, scss/main.css */
+  /* line 620, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 190px); } }
 
 @media (min-width: 750px) {
-  /* line 618, scss/main.css */
+  /* line 623, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 205px); } }
 
 @media (min-width: 1000px) {
-  /* line 621, scss/main.css */
+  /* line 626, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 195px); } }
 
-/* line 623, scss/main.css */
+/* line 628, scss/main.css */
 .dishSlider li {
   display: inline-block;
   width: 50px;
@@ -813,55 +819,55 @@ header {
   margin: 35px 10px 0 0; }
 
 @media (min-width: 450px) {
-  /* line 629, scss/main.css */
+  /* line 634, scss/main.css */
   .dishSlider li {
     width: 60px;
     height: 60px; } }
 
 @media (min-width: 550px) {
-  /* line 633, scss/main.css */
+  /* line 638, scss/main.css */
   .dishSlider li {
     width: 70px;
     height: 70px; } }
 
 @media (min-width: 650px) {
-  /* line 637, scss/main.css */
+  /* line 642, scss/main.css */
   .dishSlider li {
     width: 80px;
     height: 80px; } }
 
 @media (min-width: 750px) {
-  /* line 641, scss/main.css */
+  /* line 646, scss/main.css */
   .dishSlider li {
     width: 90px;
     height: 90px; } }
 
 @media (min-width: 1000px) {
-  /* line 645, scss/main.css */
+  /* line 650, scss/main.css */
   .dishSlider li {
     width: 100px;
     height: 100px;
     margin: 60px 50px 0 0px; } }
 
-/* line 649, scss/main.css */
+/* line 654, scss/main.css */
 .dishSlider :first-child {
   background-image: url("../images/section three/img-3-slider-section-two.png");
   background-repeat: no-repeat;
   background-size: contain; }
 
-/* line 653, scss/main.css */
+/* line 658, scss/main.css */
 .dishSlider :nth-child(2) {
   background-image: url("../images/section three/img-2-slider-section-two.png");
   background-repeat: no-repeat;
   background-size: contain; }
 
-/* line 657, scss/main.css */
+/* line 662, scss/main.css */
 .dishSlider :nth-child(3) {
   background-image: url("../images/section three/img-slider-section-two.png");
   background-repeat: no-repeat;
   background-size: contain; }
 
-/* line 662, scss/main.css */
+/* line 667, scss/main.css */
 .leftSliderBtn {
   transform: rotate(90deg);
   text-align: center;
@@ -879,74 +885,74 @@ header {
   cursor: pointer; }
 
 @media (min-width: 450px) {
-  /* line 678, scss/main.css */
+  /* line 683, scss/main.css */
   .leftSliderBtn {
     margin: 40px 0 0px 30px; } }
 
 @media (min-width: 550px) {
-  /* line 681, scss/main.css */
+  /* line 686, scss/main.css */
   .leftSliderBtn {
     margin: 50px 0 0px 30px; } }
 
 @media (min-width: 650px) {
-  /* line 684, scss/main.css */
+  /* line 689, scss/main.css */
   .leftSliderBtn {
     margin: 55px 0 0px 30px; } }
 
 @media (min-width: 750px) {
-  /* line 687, scss/main.css */
+  /* line 692, scss/main.css */
   .leftSliderBtn {
     margin: 60px 0 0px 30px; } }
 
 @media (min-width: 1000px) {
-  /* line 690, scss/main.css */
+  /* line 695, scss/main.css */
   .leftSliderBtn {
     margin: -75px 0px 0px 65px; } }
 
-/* line 693, scss/main.css */
+/* line 698, scss/main.css */
 .rightSliderBtn {
   transform: rotate(-90deg);
   float: right;
   margin: -50px -5px 0px 0; }
 
 @media (min-width: 450px) {
-  /* line 698, scss/main.css */
+  /* line 703, scss/main.css */
   .rightSliderBtn {
     margin: 40px 15px 0px 0; } }
 
 @media (min-width: 550px) {
-  /* line 701, scss/main.css */
+  /* line 706, scss/main.css */
   .rightSliderBtn {
     margin: 50px 15px 0px 0; } }
 
 @media (min-width: 650px) {
-  /* line 704, scss/main.css */
+  /* line 709, scss/main.css */
   .rightSliderBtn {
     margin: 55px 15px 0px 0; } }
 
 @media (min-width: 750px) {
-  /* line 707, scss/main.css */
+  /* line 712, scss/main.css */
   .rightSliderBtn {
     margin: 60px 15px 0px 0; } }
 
 @media (min-width: 1000px) {
-  /* line 710, scss/main.css */
+  /* line 715, scss/main.css */
   .rightSliderBtn {
     margin: -75px 55px 0px 0; } }
 
-/* line 713, scss/main.css */
+/* line 718, scss/main.css */
 .leftSliderBtn:hover,
 .rightSliderBtn:hover {
   border: 2px solid #56534c;
   color: #56534c; }
 
-/* line 718, scss/main.css */
+/* line 723, scss/main.css */
 .bullets {
   margin-left: calc(50% - 45px);
   list-style-type: none;
   margin-top: 25px; }
 
-/* line 722, scss/main.css */
+/* line 727, scss/main.css */
 .bullets li {
   margin: 4px;
   display: inline-block;
@@ -955,12 +961,12 @@ header {
   background: #d8bba3;
   border-radius: 100%; }
 
-/* line 729, scss/main.css */
+/* line 734, scss/main.css */
 .bullets :first-child {
   border: 2px solid #d8bba3;
   background: none; }
 
-/* line 733, scss/main.css */
+/* line 738, scss/main.css */
 .cookTime {
   display: none;
   position: absolute;
@@ -978,34 +984,34 @@ header {
   text-align: center; }
 
 @media (min-width: 1100px) {
-  /* line 749, scss/main.css */
+  /* line 754, scss/main.css */
   .cookTime {
     display: inline-block; } }
 
 @media (min-width: 1500px) {
-  /* line 752, scss/main.css */
+  /* line 757, scss/main.css */
   .cookTime {
     right: -125px; } }
 
-/* line 754, scss/main.css */
+/* line 759, scss/main.css */
 .cookTime h3 {
   margin: 40px 0 0 0;
   font-size: 18px; }
 
-/* line 757, scss/main.css */
+/* line 762, scss/main.css */
 .cookTime h2 {
   color: #dfc691;
   margin: 0 0 0 0;
   font-size: 90px; }
 
-/* line 761, scss/main.css */
+/* line 766, scss/main.css */
 .cookTime p {
   color: #979285;
   margin: 0 0 0 0;
   font-size: 18px;
   letter-spacing: 2px; }
 
-/* line 767, scss/main.css */
+/* line 772, scss/main.css */
 .sectionFour {
   background-image: url("../images/section four/section-four-bg.png");
   background-repeat: no-repeat;
@@ -1014,7 +1020,7 @@ header {
   position: relative;
   color: white; }
 
-/* line 775, scss/main.css */
+/* line 780, scss/main.css */
 .bfMenu {
   height: 900px;
   right: calc(50% - 295px);
@@ -1028,12 +1034,12 @@ header {
   color: black; }
 
 @media (min-width: 750px) {
-  /* line 787, scss/main.css */
+  /* line 792, scss/main.css */
   .bfMenu {
     right: 70px;
     height: 735px; } }
 
-/* line 790, scss/main.css */
+/* line 795, scss/main.css */
 .bfMenu .bfLogoTextLeft {
   padding: 80px 0 0 140px;
   float: left;
@@ -1042,7 +1048,7 @@ header {
   color: #56534c;
   font-weight: 700; }
 
-/* line 797, scss/main.css */
+/* line 802, scss/main.css */
 .bfMenu .bfLogoTextRight {
   padding: 80px 180px 0 0;
   float: right;
@@ -1051,7 +1057,7 @@ header {
   color: #56534c;
   font-weight: 700; }
 
-/* line 804, scss/main.css */
+/* line 809, scss/main.css */
 .bfMenu .bfLogo {
   background-image: url("../images/section four/line.png");
   background-repeat: no-repeat;
@@ -1063,7 +1069,7 @@ header {
   top: 110px;
   left: calc(50% - 250px); }
 
-/* line 814, scss/main.css */
+/* line 819, scss/main.css */
 .bfMenu .bfMenuText {
   font-size: 44px;
   font-family: "Alegreya", 'sans-serif';
@@ -1074,7 +1080,7 @@ header {
   margin-left: calc(50% - 220px);
   width: 70%; }
 
-/* line 823, scss/main.css */
+/* line 828, scss/main.css */
 .bfMenu .bfMenuDescription {
   font-size: 14px;
   font-family: "Raleway", 'sans-serif';
@@ -1084,7 +1090,7 @@ header {
   width: 62%;
   margin-left: calc(50% - 195px); }
 
-/* line 831, scss/main.css */
+/* line 836, scss/main.css */
 .bfMenu .bfBtn {
   border: 1px solid #9e9c93;
   width: 238px;
@@ -1102,12 +1108,12 @@ header {
   position: relative;
   z-index: 999; }
 
-/* line 847, scss/main.css */
+/* line 852, scss/main.css */
 .bfMenu .bfBtn:hover {
   transform: scale(1.2, 1.2);
   transition: 500ms; }
 
-/* line 851, scss/main.css */
+/* line 856, scss/main.css */
 .bfMenuBgSecond {
   position: absolute;
   z-index: 2;
@@ -1117,7 +1123,7 @@ header {
   right: -115px;
   overflow: none; }
 
-/* line 859, scss/main.css */
+/* line 864, scss/main.css */
 .bfMenuBgSecond .bfMenuBgFirst {
   position: absolute;
   z-index: 3;
@@ -1128,11 +1134,11 @@ header {
   background-size: contain;
   overflow: none; }
 
-/* line 868, scss/main.css */
+/* line 873, scss/main.css */
 .bfMenuBgSecond .bfMenuBgFirst .bfMenu {
   overflow: hidden; }
 
-/* line 871, scss/main.css */
+/* line 876, scss/main.css */
 .wheat {
   background-image: url("../images/section four/Vektor-Smartobjekt-section-four.png");
   background-repeat: no-repeat;
@@ -1144,7 +1150,7 @@ header {
   left: 305px;
   bottom: 110px; }
 
-/* line 882, scss/main.css */
+/* line 887, scss/main.css */
 .headerText {
   font-size: 60px;
   font-family: "Alegreya";
@@ -1154,14 +1160,14 @@ header {
   text-align: center;
   margin: 108px 0 10px 0; }
 
-/* line 891, scss/main.css */
+/* line 896, scss/main.css */
 .bfHeaderDescription {
   padding: 5px 0 110px 0px;
   text-align: center;
   color: #c8a593;
   font-weight: bold; }
 
-/* line 897, scss/main.css */
+/* line 902, scss/main.css */
 .bfHeader {
   font-size: 30px;
   font-family: "Alegreya";
@@ -1171,7 +1177,7 @@ header {
   text-align: center;
   margin-bottom: 15px; }
 
-/* line 906, scss/main.css */
+/* line 911, scss/main.css */
 .bfDescription {
   font-family: "Alegreya";
   font-size: 18px;
@@ -1180,7 +1186,7 @@ header {
   margin-bottom: 30px;
   color: #c2beba; }
 
-/* line 914, scss/main.css */
+/* line 919, scss/main.css */
 .bfPrice {
   font-size: 36px;
   font-family: "Alegreya";
@@ -1190,17 +1196,16 @@ header {
   margin-bottom: 60px;
   font-weight: 400; }
 
-/* line 923, scss/main.css */
+/* line 928, scss/main.css */
 .sectionFive {
   background-image: url("../images/section five/section-five-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   position: relative;
-  color: white;
-  background-attachment: fixed; }
+  color: white; }
 
-/* line 932, scss/main.css */
+/* line 936, scss/main.css */
 .JibaritoSandwich {
   font-size: 48px;
   font-family: "Alegreya";
@@ -1210,7 +1215,7 @@ header {
   text-align: center;
   margin: -25px 0 0 0; }
 
-/* line 941, scss/main.css */
+/* line 945, scss/main.css */
 .bgSandwich {
   background-image: url("../images/section five/Vektor-Smartobjekt-section-five.png");
   background-repeat: no-repeat;
@@ -1219,32 +1224,32 @@ header {
   height: 115px;
   margin-left: calc(50% - 60px); }
 
-/* line 949, scss/main.css */
+/* line 953, scss/main.css */
 .swPhoto {
   width: 100px;
   height: 100px;
   margin-left: calc(50% - 50px);
   margin-bottom: 25px; }
 
-/* line 955, scss/main.css */
+/* line 959, scss/main.css */
 .swPhotoOne {
   background-image: url("../images/section five/img-1-section-five.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 960, scss/main.css */
+/* line 964, scss/main.css */
 .swPhotoTwo {
   background-image: url("../images/section five/img-2-section-five.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 965, scss/main.css */
+/* line 969, scss/main.css */
 .swPhotoThree {
   background-image: url("../images/section five/img-3-section-five.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 970, scss/main.css */
+/* line 974, scss/main.css */
 .swHeader {
   font-size: 30px;
   font-family: "Alegreya";
@@ -1254,7 +1259,7 @@ header {
   text-align: center;
   margin-bottom: 15px; }
 
-/* line 979, scss/main.css */
+/* line 983, scss/main.css */
 .swDesc {
   font-size: 14px;
   font-family: "Raleway", 'sans-serif';
@@ -1263,7 +1268,7 @@ header {
   text-align: center;
   margin-bottom: 40px; }
 
-/* line 987, scss/main.css */
+/* line 991, scss/main.css */
 .swCookBg {
   background-image: url("../images/section five/img_bg_info-section-five.png");
   background-repeat: no-repeat;
@@ -1274,7 +1279,7 @@ header {
   margin-top: calc(50% - 325px);
   /* margin-left: calc(50% - 385px); */ }
 
-/* line 997, scss/main.css */
+/* line 1001, scss/main.css */
 .prep {
   list-style-type: none;
   display: inline-block;
@@ -1282,7 +1287,7 @@ header {
   top: -65px;
   float: right; }
 
-/* line 1003, scss/main.css */
+/* line 1007, scss/main.css */
 .prep li {
   width: 225px;
   height: 225px;
@@ -1291,47 +1296,144 @@ header {
   margin-bottom: 1px;
   text-align: center; }
 
-/* line 1010, scss/main.css */
+/* line 1014, scss/main.css */
 .prep li h3 {
   margin: 5px 0 0 0;
   font-size: 18px;
   padding: 35px 0 0 0; }
 
-/* line 1014, scss/main.css */
+/* line 1018, scss/main.css */
 .prep li h2 {
   color: #56534c;
   margin: -25px 0 0 0;
   font-size: 90px; }
 
-/* line 1018, scss/main.css */
+/* line 1022, scss/main.css */
 .prep li p {
   color: #979285;
   margin: 0 0 0 0;
   font-size: 18px;
   letter-spacing: 2px; }
 
-/* line 1023, scss/main.css */
+/* line 1027, scss/main.css */
 .prep li:last-child {
   background-image: url("../images/section three/Vektor-Smartobjekt-section-two.png");
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 1; }
 
-/* line 1028, scss/main.css */
+/* line 1032, scss/main.css */
 .prep li:last-child h3 {
   margin: 5px 0 0 0;
   padding: 35px 0 0 0;
   font-size: 18px; }
 
-/* line 1032, scss/main.css */
+/* line 1036, scss/main.css */
 .prep li:last-child h2 {
   color: #dfc691;
   margin: -10px 0 0 0;
   font-size: 90px; }
 
-/* line 1036, scss/main.css */
+/* line 1040, scss/main.css */
 .prep li:last-child p {
   color: #979285;
   margin: 0 0 0 0;
   font-size: 18px;
   letter-spacing: 2px; }
+
+/* line 1046, scss/main.css */
+.fullRecipe {
+  font-size: 18px;
+  font-family: "Alegreya";
+  color: #dfc691;
+  font-weight: bold;
+  text-align: center;
+  border: 1px dashed #dfc691;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  padding-top: calc(50% - 410px);
+  position: relative;
+  float: left;
+  top: 530px;
+  right: 20px; }
+
+/* line 1063, scss/main.css */
+.fullRecipe:hover {
+  transform: scale(1.2, 1.2);
+  transition: 500ms; }
+
+/* line 1067, scss/main.css */
+footer {
+  background-image: url("../images/footer/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+  color: #56534c;
+  cursor: pointer; }
+
+/* line 1076, scss/main.css */
+.footerPosition {
+  list-style-type: none;
+  margin: 100px 0; }
+
+/* line 1079, scss/main.css */
+.footerPosition :first-child {
+  padding-left: 50px; }
+
+/* line 1081, scss/main.css */
+.footerPosition :first-child,
+.footerPosition :nth-child(2),
+.footerPosition :nth-child(3) {
+  float: left; }
+
+/* line 1085, scss/main.css */
+.footerPosition :nth-child(3) {
+  padding-right: 25px; }
+
+/* line 1087, scss/main.css */
+.footerPosition .footerLogo {
+  color: #56534c;
+  border: none;
+  text-align: center;
+  padding: 0px 30px; }
+
+/* line 1092, scss/main.css */
+.footerPosition :nth-child(5),
+.footerPosition :nth-child(6),
+.footerPosition :last-child {
+  float: right; }
+
+/* line 1096, scss/main.css */
+.footerPosition :nth-child(5) {
+  padding-right: 50px; }
+
+/* line 1098, scss/main.css */
+.footerPosition :nth-child(7) {
+  padding-left: 25px; }
+
+/* line 1100, scss/main.css */
+.footerPosition li {
+  font-size: 14px;
+  font-family: "Alegreya";
+  color: #56534c;
+  display: inline-block;
+  letter-spacing: 1px;
+  border-bottom: 0.5px solid #c2beba;
+  padding: 20px 0;
+  border-top: 0.5px solid #c2beba; }
+
+/* line 1109, scss/main.css */
+.footerPosition li span {
+  padding: 0 55px; }
+
+/* line 1111, scss/main.css */
+.footerPosition li:hover {
+  color: #aa8669; }
+
+/* line 1113, scss/main.css */
+.footerPosition li:hover span {
+  color: #56534c;
+  cursor: default; }
