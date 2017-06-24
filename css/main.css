@@ -360,36 +360,46 @@ header {
 
 /* line 280, scss/main.css */
 .midSectionPhoto {
+  position: relative;
+  background-position: bottom;
   background-image: url("../images/nav and header/border_bullets.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100vw;
   height: 135px;
-  position: relative;
   z-index: 999;
-  top: -50px; }
+  top: 50px; }
 
-/* line 290, scss/main.css */
+@media (min-width: 450px) {
+  /* line 291, scss/main.css */
+  .midSectionPhoto {
+    top: 65px; } }
+
+@media (min-width: 800px) {
+  /* line 294, scss/main.css */
+  .midSectionPhoto {
+    top: 95px; } }
+
+/* line 297, scss/main.css */
 .sectionTwo {
   background-image: url("../images/section two/section-two-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  position: relative;
-  top: -115px; }
+  position: relative; }
 
-/* line 298, scss/main.css */
+/* line 304, scss/main.css */
 .pos {
   padding-top: 100px;
   display: flex;
   flex-direction: column; }
 
 @media (min-width: 750px) {
-  /* line 303, scss/main.css */
+  /* line 309, scss/main.css */
   .pos {
     flex-direction: row; } }
 
-/* line 306, scss/main.css */
+/* line 312, scss/main.css */
 .headerText {
   line-height: 0.625;
   font-size: 48px;
@@ -398,7 +408,7 @@ header {
   font-weight: 700;
   text-align: center; }
 
-/* line 314, scss/main.css */
+/* line 320, scss/main.css */
 .headerDescription {
   font-family: "Alegreya", 'sans-serif';
   color: #a47d5e;
@@ -407,7 +417,7 @@ header {
   padding-top: 15px;
   font-size: 16px; }
 
-/* line 322, scss/main.css */
+/* line 328, scss/main.css */
 .description {
   font-size: 14px;
   font-family: 'Raleway', 'sans-serif';
@@ -417,7 +427,7 @@ header {
   padding: 30px;
   font-weight: 600; }
 
-/* line 331, scss/main.css */
+/* line 337, scss/main.css */
 .chefCook {
   font-size: 24px;
   font-family: "Alegreya", 'sans-serif';
@@ -426,7 +436,7 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 339, scss/main.css */
+/* line 345, scss/main.css */
 .chefUl {
   display: flex;
   flex-direction: column;
@@ -434,26 +444,26 @@ header {
   margin-left: 0; }
 
 @media (min-width: 750px) {
-  /* line 345, scss/main.css */
+  /* line 351, scss/main.css */
   .chefUl {
     flex-direction: row;
     margin-left: calc(50% - 180px); } }
 
 @media (min-width: 850px) {
-  /* line 349, scss/main.css */
+  /* line 355, scss/main.css */
   .chefUl {
     margin-left: calc(50% - 215px); } }
 
-/* line 351, scss/main.css */
+/* line 357, scss/main.css */
 .chefUl li {
   padding: 20px 0; }
 
 @media (min-width: 850px) {
-  /* line 354, scss/main.css */
+  /* line 360, scss/main.css */
   .chefUl li {
     padding: 40px 15px; } }
 
-/* line 356, scss/main.css */
+/* line 362, scss/main.css */
 .chefUl li .chefName,
 .chefUl li .chefSurname {
   border-top: 1px solid #d7d5ca;
@@ -466,7 +476,7 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 367, scss/main.css */
+/* line 373, scss/main.css */
 .chefUl li .chefPhoto {
   background-image: url("../images/section two/avatar_section_one.png");
   background-repeat: no-repeat;
@@ -478,40 +488,40 @@ header {
   margin-left: calc(50% - 65px); }
 
 @media (min-width: 850px) {
-  /* line 377, scss/main.css */
+  /* line 383, scss/main.css */
   .chefUl li .chefPhoto {
     margin-left: 0; } }
 
-/* line 380, scss/main.css */
+/* line 386, scss/main.css */
 .leftMark {
   margin-left: calc(10% - 20px); }
 
 @media (min-width: 850px) {
-  /* line 383, scss/main.css */
+  /* line 389, scss/main.css */
   .leftMark {
     margin-left: calc(15% - 20px); } }
 
 @media (min-width: 1050px) {
-  /* line 386, scss/main.css */
+  /* line 392, scss/main.css */
   .leftMark {
     margin-left: calc(20% - 20px); } }
 
-/* line 389, scss/main.css */
+/* line 395, scss/main.css */
 .rightMark {
   float: right;
   margin: 15px calc(10% - 20px) 0 0; }
 
 @media (min-width: 850px) {
-  /* line 393, scss/main.css */
+  /* line 399, scss/main.css */
   .rightMark {
     margin: 15px calc(15% - 20px) 0 0; } }
 
 @media (min-width: 1050px) {
-  /* line 396, scss/main.css */
+  /* line 402, scss/main.css */
   .rightMark {
     margin: 15px calc(20% - 20px) 0 0; } }
 
-/* line 399, scss/main.css */
+/* line 405, scss/main.css */
 .leftMark,
 .rightMark {
   font-size: 24px;
@@ -519,7 +529,7 @@ header {
   color: #b6b5b2;
   line-height: 0.5; }
 
-/* line 406, scss/main.css */
+/* line 412, scss/main.css */
 .cursiveText {
   font-size: 24px;
   font-family: 'Dancing Script', 'cursive';
@@ -527,7 +537,7 @@ header {
   line-height: 1.25;
   text-align: center; }
 
-/* line 413, scss/main.css */
+/* line 419, scss/main.css */
 .cakePhotos {
   display: flex;
   flex-direction: row;
@@ -535,27 +545,27 @@ header {
   flex-wrap: wrap;
   margin-bottom: 100px; }
 
-/* line 419, scss/main.css */
+/* line 425, scss/main.css */
 .cakePhotos li {
   padding: 10px 5px 20px 0; }
 
-/* line 421, scss/main.css */
+/* line 427, scss/main.css */
 .cakePhotos li .topLeftPhoto {
   background-image: url("../images/section two/img top left.png"); }
 
-/* line 423, scss/main.css */
+/* line 429, scss/main.css */
 .cakePhotos li .topRightPhoto {
   background-image: url("../images/section two/img top right.png"); }
 
-/* line 425, scss/main.css */
+/* line 431, scss/main.css */
 .cakePhotos li .bottomRightPhoto {
   background-image: url("../images/section two/img bottom right.png"); }
 
-/* line 427, scss/main.css */
+/* line 433, scss/main.css */
 .cakePhotos li .bottomLeftPhoto {
   background-image: url("../images/section two/img bottom left.png"); }
 
-/* line 429, scss/main.css */
+/* line 435, scss/main.css */
 .cakePhotos li .topLeftPhoto,
 .cakePhotos li .topRightPhoto,
 .cakePhotos li .bottomLeftPhoto,
@@ -566,7 +576,7 @@ header {
   height: 285px; }
 
 @media (min-width: 450px) {
-  /* line 438, scss/main.css */
+  /* line 444, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -574,7 +584,7 @@ header {
     left: calc(50% - 50px); } }
 
 @media (min-width: 630px) {
-  /* line 444, scss/main.css */
+  /* line 450, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -583,7 +593,7 @@ header {
     height: 245px; } }
 
 @media (min-width: 751px) {
-  /* line 451, scss/main.css */
+  /* line 457, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -592,7 +602,7 @@ header {
     height: 140px; } }
 
 @media (min-width: 851px) {
-  /* line 458, scss/main.css */
+  /* line 464, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -601,7 +611,7 @@ header {
     height: 170px; } }
 
 @media (min-width: 1000px) {
-  /* line 465, scss/main.css */
+  /* line 471, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -610,7 +620,7 @@ header {
     height: 195px; } }
 
 @media (min-width: 1100px) {
-  /* line 472, scss/main.css */
+  /* line 478, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -619,7 +629,7 @@ header {
     height: 235px; } }
 
 @media (min-width: 1200px) {
-  /* line 479, scss/main.css */
+  /* line 485, scss/main.css */
   .cakePhotos li .topLeftPhoto,
   .cakePhotos li .topRightPhoto,
   .cakePhotos li .bottomLeftPhoto,
@@ -627,12 +637,12 @@ header {
     width: 275px;
     height: 235px; } }
 
-/* line 486, scss/main.css */
+/* line 492, scss/main.css */
 .stempel {
   display: none; }
 
 @media (min-width: 750px) {
-  /* line 489, scss/main.css */
+  /* line 495, scss/main.css */
   .stempel {
     display: inline-block;
     background-image: url("../images/section two/vector_section_one.png");
@@ -646,19 +656,19 @@ header {
     top: 184px; } }
 
 @media (min-width: 850px) {
-  /* line 501, scss/main.css */
+  /* line 507, scss/main.css */
   .stempel {
     left: calc(50% + 120px);
     top: 210px; } }
 
 @media (min-width: 900px) {
-  /* line 505, scss/main.css */
+  /* line 511, scss/main.css */
   .stempel {
     left: calc(50% + 120px);
     top: 210px; } }
 
 @media (min-width: 1000px) {
-  /* line 509, scss/main.css */
+  /* line 515, scss/main.css */
   .stempel {
     left: calc(50% + 115px);
     top: 205px;
@@ -670,38 +680,31 @@ header {
     top: 230px; } }
 
 @media (min-width: 1100px) {
-  /* line 519, scss/main.css */
+  /* line 525, scss/main.css */
   .stempel {
     left: calc(50% + 173px);
     top: 260px; } }
 
 @media (min-width: 1200px) {
-  /* line 523, scss/main.css */
+  /* line 529, scss/main.css */
   .stempel {
     left: calc(50% + 190px);
     top: 265px; } }
 
-/* line 527, scss/main.css */
+/* line 533, scss/main.css */
 .sectionThree {
   background-image: url("../images/section three/section-three-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  top: -115px;
-  position: relative;
-  background-attachment: fixed; }
+  position: relative; }
 
-@media (min-width: 1000px) {
-  /* line 536, scss/main.css */
-  .sectionThree {
-    height: 1382px; } }
-
-/* line 539, scss/main.css */
+/* line 540, scss/main.css */
 .sectionThreeBg {
-  display: none; }
+  background-image: none; }
 
 @media (min-width: 1000px) {
-  /* line 542, scss/main.css */
+  /* line 543, scss/main.css */
   .sectionThreeBg {
     display: block;
     background-image: url("../images/section three/img-rating.png");
@@ -709,8 +712,7 @@ header {
     background-size: contain;
     width: 100%;
     height: 603px;
-    margin-top: calc(50% - 410px);
-    margin-left: calc(50% - 550px); } }
+    margin: calc(50% - 410px) calc(50% - 590px); } }
 
 /* line 552, scss/main.css */
 .dishMenu {
@@ -728,13 +730,12 @@ header {
   /* line 563, scss/main.css */
   .dishMenu {
     margin: 0 0 0 0;
-    top: -603px;
     background-repeat: no-repeat;
     background-size: contain;
     width: 60%;
     float: right; } }
 
-/* line 571, scss/main.css */
+/* line 570, scss/main.css */
 .windmill {
   background-image: url("../images/section three/Vektor-Smartobjekt windmill.png");
   background-repeat: no-repeat;
@@ -743,17 +744,17 @@ header {
   height: 80%;
   background-position: right bottom; }
 
-/* line 579, scss/main.css */
+/* line 578, scss/main.css */
 .dishName {
   margin: 100px 0 20px 80px;
   text-align: left; }
 
-/* line 583, scss/main.css */
+/* line 582, scss/main.css */
 .headerDescrption {
   color: #aa8669;
   margin: 0 0 20px 80px; }
 
-/* line 587, scss/main.css */
+/* line 586, scss/main.css */
 .recipeText {
   font-size: 16px;
   font-family: "Raleway";
@@ -764,7 +765,7 @@ header {
   text-align: left;
   margin: 65px 0 0 80px; }
 
-/* line 597, scss/main.css */
+/* line 596, scss/main.css */
 .stars {
   background-image: url("../images/section three/rating.png");
   background-repeat: no-repeat;
@@ -773,38 +774,38 @@ header {
   height: 20px;
   margin: 35px 0 0 80px; }
 
-/* line 605, scss/main.css */
+/* line 604, scss/main.css */
 .dishSlider {
   list-style-type: none;
   display: inline-block;
   margin-left: calc(50% - 73px); }
 
 @media (min-width: 450px) {
-  /* line 610, scss/main.css */
+  /* line 609, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 160px); } }
 
 @media (min-width: 550px) {
-  /* line 613, scss/main.css */
+  /* line 612, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 175px); } }
 
 @media (min-width: 650px) {
-  /* line 616, scss/main.css */
+  /* line 615, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 190px); } }
 
 @media (min-width: 750px) {
-  /* line 619, scss/main.css */
+  /* line 618, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 205px); } }
 
 @media (min-width: 1000px) {
-  /* line 622, scss/main.css */
+  /* line 621, scss/main.css */
   .dishSlider {
     margin-left: calc(50% - 195px); } }
 
-/* line 624, scss/main.css */
+/* line 623, scss/main.css */
 .dishSlider li {
   display: inline-block;
   width: 50px;
@@ -812,55 +813,55 @@ header {
   margin: 35px 10px 0 0; }
 
 @media (min-width: 450px) {
-  /* line 630, scss/main.css */
+  /* line 629, scss/main.css */
   .dishSlider li {
     width: 60px;
     height: 60px; } }
 
 @media (min-width: 550px) {
-  /* line 634, scss/main.css */
+  /* line 633, scss/main.css */
   .dishSlider li {
     width: 70px;
     height: 70px; } }
 
 @media (min-width: 650px) {
-  /* line 638, scss/main.css */
+  /* line 637, scss/main.css */
   .dishSlider li {
     width: 80px;
     height: 80px; } }
 
 @media (min-width: 750px) {
-  /* line 642, scss/main.css */
+  /* line 641, scss/main.css */
   .dishSlider li {
     width: 90px;
     height: 90px; } }
 
 @media (min-width: 1000px) {
-  /* line 646, scss/main.css */
+  /* line 645, scss/main.css */
   .dishSlider li {
     width: 100px;
     height: 100px;
     margin: 60px 50px 0 0px; } }
 
-/* line 650, scss/main.css */
+/* line 649, scss/main.css */
 .dishSlider :first-child {
   background-image: url("../images/section three/img-3-slider-section-two.png");
   background-repeat: no-repeat;
   background-size: contain; }
 
-/* line 654, scss/main.css */
+/* line 653, scss/main.css */
 .dishSlider :nth-child(2) {
   background-image: url("../images/section three/img-2-slider-section-two.png");
   background-repeat: no-repeat;
   background-size: contain; }
 
-/* line 658, scss/main.css */
+/* line 657, scss/main.css */
 .dishSlider :nth-child(3) {
   background-image: url("../images/section three/img-slider-section-two.png");
   background-repeat: no-repeat;
   background-size: contain; }
 
-/* line 663, scss/main.css */
+/* line 662, scss/main.css */
 .leftSliderBtn {
   transform: rotate(90deg);
   text-align: center;
@@ -878,74 +879,74 @@ header {
   cursor: pointer; }
 
 @media (min-width: 450px) {
-  /* line 679, scss/main.css */
+  /* line 678, scss/main.css */
   .leftSliderBtn {
     margin: 40px 0 0px 30px; } }
 
 @media (min-width: 550px) {
-  /* line 682, scss/main.css */
+  /* line 681, scss/main.css */
   .leftSliderBtn {
     margin: 50px 0 0px 30px; } }
 
 @media (min-width: 650px) {
-  /* line 685, scss/main.css */
+  /* line 684, scss/main.css */
   .leftSliderBtn {
     margin: 55px 0 0px 30px; } }
 
 @media (min-width: 750px) {
-  /* line 688, scss/main.css */
+  /* line 687, scss/main.css */
   .leftSliderBtn {
     margin: 60px 0 0px 30px; } }
 
 @media (min-width: 1000px) {
-  /* line 691, scss/main.css */
+  /* line 690, scss/main.css */
   .leftSliderBtn {
     margin: -75px 0px 0px 65px; } }
 
-/* line 694, scss/main.css */
+/* line 693, scss/main.css */
 .rightSliderBtn {
   transform: rotate(-90deg);
   float: right;
   margin: -50px -5px 0px 0; }
 
 @media (min-width: 450px) {
-  /* line 699, scss/main.css */
+  /* line 698, scss/main.css */
   .rightSliderBtn {
     margin: 40px 15px 0px 0; } }
 
 @media (min-width: 550px) {
-  /* line 702, scss/main.css */
+  /* line 701, scss/main.css */
   .rightSliderBtn {
     margin: 50px 15px 0px 0; } }
 
 @media (min-width: 650px) {
-  /* line 705, scss/main.css */
+  /* line 704, scss/main.css */
   .rightSliderBtn {
     margin: 55px 15px 0px 0; } }
 
 @media (min-width: 750px) {
-  /* line 708, scss/main.css */
+  /* line 707, scss/main.css */
   .rightSliderBtn {
     margin: 60px 15px 0px 0; } }
 
 @media (min-width: 1000px) {
-  /* line 711, scss/main.css */
+  /* line 710, scss/main.css */
   .rightSliderBtn {
     margin: -75px 55px 0px 0; } }
 
-/* line 714, scss/main.css */
+/* line 713, scss/main.css */
 .leftSliderBtn:hover,
 .rightSliderBtn:hover {
   border: 2px solid #56534c;
   color: #56534c; }
 
-/* line 719, scss/main.css */
+/* line 718, scss/main.css */
 .bullets {
   margin-left: calc(50% - 45px);
   list-style-type: none;
   margin-top: 25px; }
 
-/* line 723, scss/main.css */
+/* line 722, scss/main.css */
 .bullets li {
   margin: 4px;
   display: inline-block;
@@ -954,12 +955,12 @@ header {
   background: #d8bba3;
   border-radius: 100%; }
 
-/* line 730, scss/main.css */
+/* line 729, scss/main.css */
 .bullets :first-child {
   border: 2px solid #d8bba3;
   background: none; }
 
-/* line 734, scss/main.css */
+/* line 733, scss/main.css */
 .cookTime {
   display: none;
   position: absolute;
@@ -977,50 +978,43 @@ header {
   text-align: center; }
 
 @media (min-width: 1100px) {
-  /* line 750, scss/main.css */
+  /* line 749, scss/main.css */
   .cookTime {
     display: inline-block; } }
 
 @media (min-width: 1500px) {
-  /* line 753, scss/main.css */
+  /* line 752, scss/main.css */
   .cookTime {
     right: -125px; } }
 
-/* line 755, scss/main.css */
+/* line 754, scss/main.css */
 .cookTime h3 {
   margin: 40px 0 0 0;
   font-size: 18px; }
 
-/* line 758, scss/main.css */
+/* line 757, scss/main.css */
 .cookTime h2 {
   color: #dfc691;
   margin: 0 0 0 0;
   font-size: 90px; }
 
-/* line 762, scss/main.css */
+/* line 761, scss/main.css */
 .cookTime p {
   color: #979285;
   margin: 0 0 0 0;
   font-size: 18px;
   letter-spacing: 2px; }
 
-/* line 768, scss/main.css */
+/* line 767, scss/main.css */
 .sectionFour {
   background-image: url("../images/section four/section-four-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  top: -115px;
   position: relative;
-  color: white;
-  background-attachment: fixed; }
+  color: white; }
 
-@media (min-width: 1000px) {
-  /* line 778, scss/main.css */
-  .sectionFour {
-    top: -611px; } }
-
-/* line 781, scss/main.css */
+/* line 775, scss/main.css */
 .bfMenu {
   height: 900px;
   right: calc(50% - 295px);
@@ -1034,12 +1028,12 @@ header {
   color: black; }
 
 @media (min-width: 750px) {
-  /* line 793, scss/main.css */
+  /* line 787, scss/main.css */
   .bfMenu {
     right: 70px;
     height: 735px; } }
 
-/* line 796, scss/main.css */
+/* line 790, scss/main.css */
 .bfMenu .bfLogoTextLeft {
   padding: 80px 0 0 140px;
   float: left;
@@ -1048,7 +1042,7 @@ header {
   color: #56534c;
   font-weight: 700; }
 
-/* line 803, scss/main.css */
+/* line 797, scss/main.css */
 .bfMenu .bfLogoTextRight {
   padding: 80px 180px 0 0;
   float: right;
@@ -1057,7 +1051,7 @@ header {
   color: #56534c;
   font-weight: 700; }
 
-/* line 810, scss/main.css */
+/* line 804, scss/main.css */
 .bfMenu .bfLogo {
   background-image: url("../images/section four/line.png");
   background-repeat: no-repeat;
@@ -1069,7 +1063,7 @@ header {
   top: 110px;
   left: calc(50% - 250px); }
 
-/* line 820, scss/main.css */
+/* line 814, scss/main.css */
 .bfMenu .bfMenuText {
   font-size: 44px;
   font-family: "Alegreya", 'sans-serif';
@@ -1080,7 +1074,7 @@ header {
   margin-left: calc(50% - 220px);
   width: 70%; }
 
-/* line 829, scss/main.css */
+/* line 823, scss/main.css */
 .bfMenu .bfMenuDescription {
   font-size: 14px;
   font-family: "Raleway", 'sans-serif';
@@ -1090,7 +1084,7 @@ header {
   width: 62%;
   margin-left: calc(50% - 195px); }
 
-/* line 837, scss/main.css */
+/* line 831, scss/main.css */
 .bfMenu .bfBtn {
   border: 1px solid #9e9c93;
   width: 238px;
@@ -1108,12 +1102,12 @@ header {
   position: relative;
   z-index: 999; }
 
-/* line 853, scss/main.css */
+/* line 847, scss/main.css */
 .bfMenu .bfBtn:hover {
   transform: scale(1.2, 1.2);
   transition: 500ms; }
 
-/* line 857, scss/main.css */
+/* line 851, scss/main.css */
 .bfMenuBgSecond {
   position: absolute;
   z-index: 2;
@@ -1123,7 +1117,7 @@ header {
   right: -115px;
   overflow: none; }
 
-/* line 865, scss/main.css */
+/* line 859, scss/main.css */
 .bfMenuBgSecond .bfMenuBgFirst {
   position: absolute;
   z-index: 3;
@@ -1134,11 +1128,11 @@ header {
   background-size: contain;
   overflow: none; }
 
-/* line 874, scss/main.css */
+/* line 868, scss/main.css */
 .bfMenuBgSecond .bfMenuBgFirst .bfMenu {
   overflow: hidden; }
 
-/* line 877, scss/main.css */
+/* line 871, scss/main.css */
 .wheat {
   background-image: url("../images/section four/Vektor-Smartobjekt-section-four.png");
   background-repeat: no-repeat;
@@ -1150,7 +1144,7 @@ header {
   left: 305px;
   bottom: 110px; }
 
-/* line 888, scss/main.css */
+/* line 882, scss/main.css */
 .headerText {
   font-size: 60px;
   font-family: "Alegreya";
@@ -1160,14 +1154,14 @@ header {
   text-align: center;
   margin: 108px 0 10px 0; }
 
-/* line 897, scss/main.css */
+/* line 891, scss/main.css */
 .bfHeaderDescription {
   padding: 5px 0 110px 0px;
   text-align: center;
   color: #c8a593;
   font-weight: bold; }
 
-/* line 903, scss/main.css */
+/* line 897, scss/main.css */
 .bfHeader {
   font-size: 30px;
   font-family: "Alegreya";
@@ -1177,7 +1171,7 @@ header {
   text-align: center;
   margin-bottom: 15px; }
 
-/* line 912, scss/main.css */
+/* line 906, scss/main.css */
 .bfDescription {
   font-family: "Alegreya";
   font-size: 18px;
@@ -1186,7 +1180,7 @@ header {
   margin-bottom: 30px;
   color: #c2beba; }
 
-/* line 920, scss/main.css */
+/* line 914, scss/main.css */
 .bfPrice {
   font-size: 36px;
   font-family: "Alegreya";
@@ -1196,23 +1190,17 @@ header {
   margin-bottom: 60px;
   font-weight: 400; }
 
-/* line 929, scss/main.css */
+/* line 923, scss/main.css */
 .sectionFive {
   background-image: url("../images/section five/section-five-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  top: -115px;
   position: relative;
   color: white;
   background-attachment: fixed; }
 
-@media (min-width: 1000px) {
-  /* line 939, scss/main.css */
-  .sectionFive {
-    top: -611px; } }
-
-/* line 942, scss/main.css */
+/* line 932, scss/main.css */
 .JibaritoSandwich {
   font-size: 48px;
   font-family: "Alegreya";
@@ -1222,7 +1210,7 @@ header {
   text-align: center;
   margin: -25px 0 0 0; }
 
-/* line 951, scss/main.css */
+/* line 941, scss/main.css */
 .bgSandwich {
   background-image: url("../images/section five/Vektor-Smartobjekt-section-five.png");
   background-repeat: no-repeat;
@@ -1231,32 +1219,32 @@ header {
   height: 115px;
   margin-left: calc(50% - 60px); }
 
-/* line 959, scss/main.css */
+/* line 949, scss/main.css */
 .swPhoto {
   width: 100px;
   height: 100px;
   margin-left: calc(50% - 50px);
   margin-bottom: 25px; }
 
-/* line 965, scss/main.css */
+/* line 955, scss/main.css */
 .swPhotoOne {
   background-image: url("../images/section five/img-1-section-five.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 970, scss/main.css */
+/* line 960, scss/main.css */
 .swPhotoTwo {
   background-image: url("../images/section five/img-2-section-five.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 975, scss/main.css */
+/* line 965, scss/main.css */
 .swPhotoThree {
   background-image: url("../images/section five/img-3-section-five.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 980, scss/main.css */
+/* line 970, scss/main.css */
 .swHeader {
   font-size: 30px;
   font-family: "Alegreya";
@@ -1266,7 +1254,7 @@ header {
   text-align: center;
   margin-bottom: 15px; }
 
-/* line 989, scss/main.css */
+/* line 979, scss/main.css */
 .swDesc {
   font-size: 14px;
   font-family: "Raleway", 'sans-serif';
@@ -1275,7 +1263,7 @@ header {
   text-align: center;
   margin-bottom: 40px; }
 
-/* line 997, scss/main.css */
+/* line 987, scss/main.css */
 .swCookBg {
   background-image: url("../images/section five/img_bg_info-section-five.png");
   background-repeat: no-repeat;
@@ -1286,7 +1274,7 @@ header {
   margin-top: calc(50% - 325px);
   /* margin-left: calc(50% - 385px); */ }
 
-/* line 1007, scss/main.css */
+/* line 997, scss/main.css */
 .prep {
   list-style-type: none;
   display: inline-block;
@@ -1294,7 +1282,7 @@ header {
   top: -65px;
   float: right; }
 
-/* line 1013, scss/main.css */
+/* line 1003, scss/main.css */
 .prep li {
   width: 225px;
   height: 225px;
@@ -1303,45 +1291,45 @@ header {
   margin-bottom: 1px;
   text-align: center; }
 
-/* line 1020, scss/main.css */
+/* line 1010, scss/main.css */
 .prep li h3 {
   margin: 5px 0 0 0;
   font-size: 18px;
   padding: 35px 0 0 0; }
 
-/* line 1024, scss/main.css */
+/* line 1014, scss/main.css */
 .prep li h2 {
   color: #56534c;
   margin: -25px 0 0 0;
   font-size: 90px; }
 
-/* line 1028, scss/main.css */
+/* line 1018, scss/main.css */
 .prep li p {
   color: #979285;
   margin: 0 0 0 0;
   font-size: 18px;
   letter-spacing: 2px; }
 
-/* line 1033, scss/main.css */
+/* line 1023, scss/main.css */
 .prep li:last-child {
   background-image: url("../images/section three/Vektor-Smartobjekt-section-two.png");
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 1; }
 
-/* line 1038, scss/main.css */
+/* line 1028, scss/main.css */
 .prep li:last-child h3 {
   margin: 5px 0 0 0;
   padding: 35px 0 0 0;
   font-size: 18px; }
 
-/* line 1042, scss/main.css */
+/* line 1032, scss/main.css */
 .prep li:last-child h2 {
   color: #dfc691;
   margin: -10px 0 0 0;
   font-size: 90px; }
 
-/* line 1046, scss/main.css */
+/* line 1036, scss/main.css */
 .prep li:last-child p {
   color: #979285;
   margin: 0 0 0 0;

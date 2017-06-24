@@ -1,10 +1,17 @@
-.midSectionPhoto{
+.midSectionPhoto {
+    position: relative;
+    background-position: bottom;
     background-image: url('../images/nav and header/border_bullets.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100vw;
     height: 135px;
-    position: relative;
     z-index: 999;
-    top: -50px;  
+    top: 50px;
+    @media (min-width: 450px) {
+        top: 65px;
+    }
+    @media (min-width: 800px) {
+        top: 95px;
+    }
 }
