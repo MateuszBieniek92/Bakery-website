@@ -1272,22 +1272,45 @@ header {
 .swCookBg {
   background-image: url("../images/section five/img_bg_info-section-five.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 570px;
   border: 8px solid white;
-  margin-top: calc(50% - 325px);
-  /* margin-left: calc(50% - 385px); */ }
+  margin-top: calc(50% - 160px);
+  /* margin-left: calc(50% - 385px); */
+  background-position: center; }
 
-/* line 1001, scss/main.css */
+@media (min-width: 900px) {
+  /* line 1002, scss/main.css */
+  .swCookBg {
+    margin-top: calc(50% - 255px); } }
+
+@media (min-width: 1000px) {
+  /* line 1005, scss/main.css */
+  .swCookBg {
+    background-size: contain;
+    margin-top: calc(50% - 325px); } }
+
+/* line 1009, scss/main.css */
 .prep {
   list-style-type: none;
   display: inline-block;
   position: relative;
   top: -65px;
-  float: right; }
+  /* float: right; */
+  margin-left: calc(50% - 105px); }
 
-/* line 1007, scss/main.css */
+@media (min-width: 450px) {
+  /* line 1017, scss/main.css */
+  .prep {
+    margin-left: 0; } }
+
+@media (min-width: 750px) {
+  /* line 1020, scss/main.css */
+  .prep {
+    float: right; } }
+
+/* line 1022, scss/main.css */
 .prep li {
   width: 225px;
   height: 225px;
@@ -1296,52 +1319,52 @@ header {
   margin-bottom: 1px;
   text-align: center; }
 
-/* line 1014, scss/main.css */
+/* line 1029, scss/main.css */
 .prep li h3 {
   margin: 5px 0 0 0;
   font-size: 18px;
   padding: 35px 0 0 0; }
 
-/* line 1018, scss/main.css */
+/* line 1033, scss/main.css */
 .prep li h2 {
   color: #56534c;
   margin: -25px 0 0 0;
   font-size: 90px; }
 
-/* line 1022, scss/main.css */
+/* line 1037, scss/main.css */
 .prep li p {
   color: #979285;
   margin: 0 0 0 0;
   font-size: 18px;
   letter-spacing: 2px; }
 
-/* line 1027, scss/main.css */
+/* line 1042, scss/main.css */
 .prep li:last-child {
   background-image: url("../images/section three/Vektor-Smartobjekt-section-two.png");
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 1; }
 
-/* line 1032, scss/main.css */
+/* line 1047, scss/main.css */
 .prep li:last-child h3 {
   margin: 5px 0 0 0;
   padding: 35px 0 0 0;
   font-size: 18px; }
 
-/* line 1036, scss/main.css */
+/* line 1051, scss/main.css */
 .prep li:last-child h2 {
   color: #dfc691;
   margin: -10px 0 0 0;
   font-size: 90px; }
 
-/* line 1040, scss/main.css */
+/* line 1055, scss/main.css */
 .prep li:last-child p {
   color: #979285;
   margin: 0 0 0 0;
   font-size: 18px;
   letter-spacing: 2px; }
 
-/* line 1046, scss/main.css */
+/* line 1061, scss/main.css */
 .fullRecipe {
   font-size: 18px;
   font-family: "Alegreya";
@@ -1359,12 +1382,12 @@ header {
   top: 530px;
   right: 20px; }
 
-/* line 1063, scss/main.css */
+/* line 1078, scss/main.css */
 .fullRecipe:hover {
   transform: scale(1.2, 1.2);
   transition: 500ms; }
 
-/* line 1067, scss/main.css */
+/* line 1082, scss/main.css */
 footer {
   background-image: url("../images/footer/footer_bg.png");
   background-repeat: no-repeat;
@@ -1374,47 +1397,47 @@ footer {
   color: #56534c;
   cursor: pointer; }
 
-/* line 1076, scss/main.css */
+/* line 1091, scss/main.css */
 .footerPosition {
   list-style-type: none;
   margin: 100px 0; }
 
-/* line 1079, scss/main.css */
+/* line 1094, scss/main.css */
 .footerPosition :first-child {
   padding-left: 50px; }
 
-/* line 1081, scss/main.css */
+/* line 1096, scss/main.css */
 .footerPosition :first-child,
 .footerPosition :nth-child(2),
 .footerPosition :nth-child(3) {
   float: left; }
 
-/* line 1085, scss/main.css */
+/* line 1100, scss/main.css */
 .footerPosition :nth-child(3) {
   padding-right: 25px; }
 
-/* line 1087, scss/main.css */
+/* line 1102, scss/main.css */
 .footerPosition .footerLogo {
   color: #56534c;
   border: none;
   text-align: center;
   padding: 0px 30px; }
 
-/* line 1092, scss/main.css */
+/* line 1107, scss/main.css */
 .footerPosition :nth-child(5),
 .footerPosition :nth-child(6),
 .footerPosition :last-child {
   float: right; }
 
-/* line 1096, scss/main.css */
+/* line 1111, scss/main.css */
 .footerPosition :nth-child(5) {
   padding-right: 50px; }
 
-/* line 1098, scss/main.css */
+/* line 1113, scss/main.css */
 .footerPosition :nth-child(7) {
   padding-left: 25px; }
 
-/* line 1100, scss/main.css */
+/* line 1115, scss/main.css */
 .footerPosition li {
   font-size: 14px;
   font-family: "Alegreya";
@@ -1425,15 +1448,15 @@ footer {
   padding: 20px 0;
   border-top: 0.5px solid #c2beba; }
 
-/* line 1109, scss/main.css */
+/* line 1124, scss/main.css */
 .footerPosition li span {
   padding: 0 55px; }
 
-/* line 1111, scss/main.css */
+/* line 1126, scss/main.css */
 .footerPosition li:hover {
   color: #aa8669; }
 
-/* line 1113, scss/main.css */
+/* line 1128, scss/main.css */
 .footerPosition li:hover span {
   color: #56534c;
   cursor: default; }
