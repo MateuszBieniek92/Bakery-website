@@ -1,13 +1,17 @@
-# Weather-API
+# Bakery Website
+
 A bakery website cut from psd file.
 
 ## Used technologies: 
 
-In progress... :)
+* HTML
+* CSS
+* RWD - In progress... :)
+* JQuery - In progress... :)
 
 ## Demo:
 
-In progress... :)
+https://mateuszbieniek92.github.io/Bakery-website/.
 
 ## Demo image:
 
